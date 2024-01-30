@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.p-recruit__content3 {
+  margin-top: get-pc-vw(83);
+
+  @include mq(md) {
+    margin-top: get-sp-vw(50);
+  }
+}
+
+.p-recruit__table2 {
+  margin-top: get-pc-vw(45);
+  padding-bottom: get-pc-vw(120);
+
+  @include mq(md) {
+    padding-bottom:  get-sp-vw(105);
+  }
+}

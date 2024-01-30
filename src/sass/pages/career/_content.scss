@@ -1,0 +1,360 @@
+@use "global" as *;
+
+.p-career__wrapper {
+  display: flex;
+  padding-top: get-pc-vw(88);
+  
+  @include mq(md) {
+    flex-direction: column;
+  }
+}
+
+.p-career__sticky {
+  height: auto;
+  width: 16%;
+}
+
+.p-career__list {
+  position: sticky;
+  top: get-pc-vw(150);
+
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.p-career__box {
+  width: 84%;
+  margin-top: get-pc-vw(7);
+
+  @include mq(md) {
+    width: 100%;
+    margin-top: get-sp-vw(18);
+  }
+}
+
+.p-career__item {
+  margin-left: get-pc-vw(22);
+  margin-bottom: get-pc-vw(22);
+  font-size: get-pc-vw(16);
+  font-weight: 700;
+  position: relative;
+
+  @include mq(md) {
+    display: none;
+  }
+
+  &.is-current {
+    &::before {
+      position: absolute;
+      content: '';
+      width: get-pc-vw(5);
+      height: get-pc-vw(5);
+      top: 50%;
+      transform: translateY(-50%);
+      left: get-pc-vw(-22);
+      background-color: $base-color;
+    }
+  }
+
+  a {
+    display: block;
+  }
+}
+
+.p-career__content__title {
+  font-size: get-pc-vw(48);
+  font-weight: 900;
+  margin-top: get-pc-vw(10);
+  // letter-spacing: -0.06em;
+
+  @include mq(md) {
+    font-size: get-sp-vw(23);
+    margin-left: get-sp-vw(10);
+    margin-top: get-sp-vw(15);
+  }
+}
+
+.p-career__content__wrap {
+  margin-top: get-pc-vw(70);
+  display: flex;
+
+  @include mq(md) {
+    margin-top: get-sp-vw(28);
+  }
+}
+
+.p-career__content2 {
+  margin-top: get-pc-vw(70);
+
+  @include mq(md) {
+    margin-top: get-sp-vw(33);
+  }
+}
+
+.p-career__arrow__wrap {
+  width: 10.5%;
+  padding-left: get-pc-vw(15);
+
+  @include mq(md) {
+    padding-left: get-sp-vw(13);
+    width: 15%;
+  }
+}
+
+.p-career__arrow {
+  width: get-pc-vw(30);
+  height: get-pc-vw(780);
+
+  @include mq(md) {
+    width: get-sp-vw(15);
+    height: get-sp-vw(870);
+  }
+}
+
+.p-career__flow {
+  width: 85%;
+
+  @include mq(md) {
+    width: 81%;
+    margin-top: get-sp-vw(6);
+  }
+}
+
+.p-career__flow__box {
+  margin-bottom: get-pc-vw(55);
+  height: get-pc-vw(150);
+
+  @include mq(md) {
+    height: auto;
+    margin-bottom:  get-sp-vw(33);
+  }
+}
+
+.p-career__flow__box__wrap {
+  display: flex;
+
+  @include mq(md) {
+    flex-direction: column;
+  }
+}
+
+.p-career__flow__num {
+  font-size: get-pc-vw(20);
+  font-weight: bold;
+  color: $base-color;
+  width: get-pc-vw(150);
+
+  @include mq(md) {
+    font-size: get-sp-vw(13);
+    width: 100%;
+  }
+}
+
+.p-career__flow__title {
+  font-size: get-pc-vw(36);
+  font-weight: 900;
+  padding-left: get-pc-vw(27);
+  line-height: 1;
+  border-left: 1px solid $black;
+
+  @include mq(md) {
+    font-size: get-sp-vw(18);
+    padding-left: 0;
+    border-left: 0;
+    margin-top: get-sp-vw(3);
+  }
+}
+
+.p-career__flow__title-sm {
+  font-size: get-pc-vw(20);
+  display: inline-block;
+  font-weight: bold;
+  margin-left: get-pc-vw(16);
+}
+
+.p-career__flow__text {
+  letter-spacing: -0.02em;
+  margin-top: get-pc-vw(27);
+  line-height: 1.8;
+
+  @include mq(md) {
+    font-size: get-sp-vw(13);
+    margin-top: get-sp-vw(14);
+    line-height: 1.9;
+  }
+}
+
+.p-career__content2__head {
+  text-align: center;
+  margin-top: get-pc-vw(67);
+
+  @include mq(md) {
+    margin-top: get-sp-vw(30);
+  }
+}
+
+.p-career__content2__sub {
+  font-size: get-pc-vw(36);
+  line-height: 1;
+
+  @include mq(md) {
+    font-size: get-sp-vw(20);
+  }
+}
+
+.p-career__content2__text {
+  font-size: get-pc-vw(16);
+  margin-top: get-pc-vw(25);
+
+  @include mq(md) {
+    font-size: get-sp-vw(13);
+    margin-top: get-sp-vw(13);
+    line-height: 2;
+  }
+}
+
+.p-career__content2__body {
+  margin-top: get-pc-vw(80);
+
+  @include mq(md) {
+    margin-top: get-sp-vw(60);
+  }
+
+}
+
+.p-career__content2__flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: get-pc-vw(77);
+
+  @include mq(md) {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: get-sp-vw(54);
+  }
+}
+
+.p-career__content2__circle {
+  width: get-pc-vw(305);
+  height: get-pc-vw(305);
+  border: solid 1px #C7C7C7;
+  border-radius: 50%;
+  position: relative;
+
+  @include mq(md) {
+    width: get-sp-vw(240);
+    height: get-sp-vw(240);
+    margin-bottom: get-sp-vw(50);
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: get-pc-vw(50);
+    height: get-pc-vw(60);
+    top: get-pc-vw(-27);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    background-image: url(../../assets/images/career/career_icon.svg);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    z-index: 1;
+
+    @include mq(md) {
+      top: get-sp-vw(-20);
+      width: get-sp-vw(40);
+      height: get-sp-vw(40);
+    }
+  }
+}
+
+.p-career__content2__circle__title {
+  margin-top: get-pc-vw(34);
+  font-weight: 900;
+
+  @include mq(md) {
+    margin-top: get-sp-vw(20);
+  }
+}
+
+.p-career__content2__circle__text {
+  font-size: get-pc-vw(30);
+  line-height: 1.6;
+  font-weight: 900;
+  margin-top: get-pc-vw(30);
+
+  @include mq(md) {
+    font-size: get-sp-vw(23);
+    margin-top: get-sp-vw(37);
+  }
+
+  &:first-letter {
+    color: $base-color;
+  }
+}
+
+.p-career {
+  padding-bottom: get-pc-vw(120);
+
+  @include mq(md) {
+    padding-bottom: get-sp-vw(100);
+  }
+}
+
+.p-career__btn__wrap {
+  margin-top: get-pc-vw(80);
+
+  @include mq(md) {
+    margin-top: get-sp-vw(30);
+  }
+}
+
+.p-career__btn {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: get-pc-vw(410);
+  height: get-pc-vw(90);
+  background-color: $base-color;
+  border-radius: get-pc-vw(45);
+  color: $white;
+
+  @include mq(md) {
+    width: get-sp-vw(290);
+    height: get-sp-vw(90);
+    border-radius: get-sp-vw(45);
+  }
+}
+
+.p-career__btn__text {
+  display: block;
+  font-size: get-pc-vw(23);
+  font-weight: 900;
+  margin-top: get-pc-vw(5);
+
+  @include mq(md) {
+    font-size: get-sp-vw(18);
+    margin-top: get-sp-vw(5);
+  }
+}
+
+.p-career__btn__pdf {
+  display: block;
+  font-size: get-pc-vw(13);
+  font-weight: 500;
+  margin-top: get-pc-vw(5);
+
+  @include mq(md) {
+    font-size: get-sp-vw(12);
+    margin-top: get-sp-vw(5);
+  }
+}

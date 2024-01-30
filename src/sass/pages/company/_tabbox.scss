@@ -1,0 +1,107 @@
+@use "global" as *;
+
+.p-comapny__box__wrapper {
+  padding-bottom: get-pc-vw(120);
+
+  @include mq(md) {
+    padding-bottom: get-sp-vw(100);
+  }
+}
+.p-comapny__box__inner {
+  margin: 0 auto;
+  width: 100%;
+  height: inherit;
+  max-width: get-pc-vw(1200);
+  margin-top: get-pc-vw(90);
+
+  @include mq(md) {
+    margin-top: get-sp-vw(50);
+    max-width: get-sp-vw(768);
+  }
+}
+
+.p-comapny__box__inner2 {
+  padding-left: get-pc-vw(52);
+
+  @include mq(md) {
+    padding-left: 0;
+  }
+}
+
+.p-comapny__box__table {
+  &[aria-hidden="true"] {
+    display: none;
+  }
+}
+
+.p-comapny__box__table_head {
+  display: flex;
+  margin-top: get-pc-vw(80);
+  border-bottom: get-pc-vw(8) solid $base-color;
+
+  @include mq(md) {
+    margin-top: get-sp-vw(50);
+  }
+}
+
+.p-comapny__box__table__tab {
+  color: $black;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $white;
+  border: solid get-pc-vw(1) $black;
+  border-bottom: 0px;
+  font-size: get-pc-vw(20);
+  font-weight: bold;
+  margin-right: get-pc-vw(10);
+  height: get-pc-vw(65);
+  border-top-right-radius: get-pc-vw(15);
+  border-top-left-radius: get-pc-vw(15);
+
+  @include mq(md) {
+    height: get-sp-vw(55);
+    font-size: get-sp-vw(13);
+    border-top-right-radius: get-sp-vw(10);
+    border-top-left-radius: get-sp-vw(10);
+  }
+
+  &:last-of-type {
+    margin-right: 0px;
+  }
+
+  &.is-active {
+    height: get-pc-vw(70);
+    background-color: $base-color;
+    color: $white;
+    border: solid get-pc-vw(1) $base-color;
+
+    @include mq(md) {
+      height: get-sp-vw(60);
+    }
+  }
+}
+
+.p-comapny__box__table__en {
+  font-family: $sub-font-family;
+  font-size: get-pc-vw(12);
+  margin-bottom: get-pc-vw(5);
+
+  @include mq(md) {
+    font-size: get-sp-vw(10);
+    margin-top: get-sp-vw(5);
+    margin-bottom: get-sp-vw(2);
+  }
+}
+
+.p-comapny__box__text {
+  margin-top: get-pc-vw(30);
+
+  @include mq(md) {
+    font-size: get-sp-vw(15);
+    margin-top: get-sp-vw(20);
+    letter-spacing: -0.02em;
+  }
+}

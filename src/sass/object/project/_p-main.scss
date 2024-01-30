@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.p-main {
+  padding-top: get-pc-vw(120);
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: get-pc-vw(8);
+    background-image: url(../../assets/images/common/header_img.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 999;
+
+    @include mq(md) {
+      height: get-sp-vw(8);
+      background-image: url(../../assets/images/common/header_img_sp.svg);
+    }
+  }
+
+  @include mq(md) {
+    padding-top: get-sp-vw(90);
+    padding-bottom: 0;
+  }
+}

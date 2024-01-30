@@ -1,0 +1,43 @@
+@use "sass:math";
+
+// 数値のみを取り出す
+@function strip-unit($number) {
+  @if type-of($number) == "number" and not unitless($number) {
+    @return math.div($number, $number * 0 + 1);
+  }
+  @return $number;
+}
+
+// 幅が可変に応じて、サイズ調整
+// @function vw($window_width, $size) {
+//   @return math.div($size, $window_width) * 100vw;
+// }
+
+@function get-pc-vw($value) {
+  @return math.div($value, 1366) * 100vw;
+}
+
+@function get-sp-vw($value2) {
+  @return math.div($value2, 375) * 100vw;
+}
+
+// remへの計算式（16pxを基準としている。10pxを基準とする場合は16を10に変更する）
+@function rem($pixels) {
+  @return math.div($pixels, 16) * 1rem;
+}
+
+//フォント
+@mixin font($size: null, $height: null, $spacing: null, $weight: null) {
+	@if $size {
+    font-size: get-pc-vw($size); // ①
+	}
+	@if $height {
+		line-height: calc($height / $size);// ②
+	}
+	@if $spacing {
+		letter-spacing: calc($spacing / 1000 * 1em);// ③
+	}
+	@if $weight {
+		font-weight: $weight; // ④
+	}
+}

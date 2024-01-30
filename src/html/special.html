@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>採用情報</title>
+  <meta name="description" content="コンポーネントリストの概要です" />
+  <!-- ogp -->
+  <meta property="og:title" content="コンポーネント" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com" />
+  <meta property="og:image" content="https://example.com/images/common/ogp.jpg" />
+  <meta property="og:site_name" content="コンポーネント" />
+  <meta property="og:description" content="コンポーネントリストの概要です" />
+  <!-- twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="コンポーネントリストの概要です" />
+  <meta name="twitter:title" content="コンポーネント" />
+  <meta name="twitter:image" content="https://example.com/images/common/ogp.jpg" />
+  <!-- icon -->
+  <link rel="icon" href="./assets/images/common/icon-16x16.png" sizes="16x16" type="image/png" />
+  <link rel="apple-touch-icon" href="./assets/images/common/apple-touch-icon-152x152.png" />
+
+  <!-- googlefonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/style.css?ver=8135459498" />
+
+</head>
+
+<body>
+  <header class="p-header l-header p-header__special" id="js-header">
+    <div class="p-header__inner l-inner">
+      <div class="p-header__logo">
+        <h1 class="p-header__logo">
+          <a class="p-header__link" href="./">
+            ロゴ
+            <picture>
+              <source srcset="./assets/images/common/logo.webp" type="image/webp" width="180" height="50">
+              <img src="./assets/images/common/logo.png" alt="" decoding="async" width="180" height="50">
+            </picture>
+          </a>
+        </h1>
+      </div>
+      <nav class="p-header__nav">
+        <ul class="p-header__lists">
+          <li class="p-header__list"><a href="company.html"><i>COMPANY</i></a></li>
+          <li class="p-header__list"><a href="human&works.html"><i>WORKS & HUMAN</i></a></li>
+          <li class="p-header__list"><a href="special.html"><i>SPECIAL CONTENT</i></a></li>
+          <li class="p-header__list"><a href="career.html"><i>CAREER</i></a></li>
+          <li class="p-header__list"><a href="recruit.html"><i>RECRUIT</i></a></li>
+          <li class="p-header__entry"><a href="#">ENTRY</a></li>
+        </ul>
+      </nav>
+      <nav id="js-nav" class="p-header__nav_sp">
+        <div class="p-header__nav_scroll">
+          <div class="p-header__nav__logo">
+            <picture>
+              <source srcset="./assets/images/common/logo_nav.webp" type="image/webp" width="180" height="50">
+              <img src="./assets/images/common/logo_nav.png" alt="" decoding="async" width="180" height="50">
+            </picture>
+          </div>
+          <ul class="p-header__lists_sp">
+            <li class="p-header__list_sp"><a href="company.html"><i>COMPANY</i><span class="p-header__list-ja u-hidden-pc">会社情報</span></a></li>
+            <li class="p-header__list_sp"><a href="human&works.html"><i>WORKS & HUMAN</i><span class="p-header__list-ja u-hidden-pc">人と仕事を知る</span></a></li>
+            <li class="p-header__list_sp"><a href="special.html"><i>SPECIAL</i><span class="p-header__list-ja u-hidden-pc">しくじりリスト</span></a></li>
+            <li class="p-header__list_sp"><a href="career.html"><i>CAREER</i><span class="p-header__list-ja u-hidden-pc">キャリアを知る</span></a></li>
+            <li class="p-header__list_sp"><a href="recruit.html"><i>RECRUIT</i><span class="p-header__list-ja u-hidden-pc">採用情報</span></a></li>
+          </ul>
+          <div class="p-header__nav__logo2" >
+            <picture>
+              <source srcset="./assets/images/common/footer_logo.webp" type="image/webp">
+              <img src="./assets/images/common/footer_logo.png" alt="">
+            </picture>
+          </div>
+          <p class="p-header__nav__copy"><small>COPYRIGHT &copy;  MICHIO SHOP CO.,LTD. ALL RIGHTS RESERVED.</small></p>
+          <div class="p-header__nav__btn">
+            <a class="p-header__nav__link" href="">ENTRY</a>
+          </div>
+        </div>
+      </nav>
+      <div id="js-menu" class="p-header__menu_btn_wrapper u-hidden-pc">
+        <button id="js-menu_btn" type="button" class="p-header__menu_btn">
+          <span class="p-header__menu_btn_line"></span>
+          <span class="p-header__menu_btn_line"></span>
+          <span class="p-header__menu_btn_text">MENU</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="p-main">
+    <div class="l-inner p-special__inner">
+      <div class="p-special__video__wrap">
+        <div class="p-special__video">
+          <video class="p-special__video" autoplay muted src="./assets/images/special/shikujiri.mp4"></video>
+        </div>
+        <div class="p-special__video__wrap-sp">
+          <section class="p-special__fv">
+            <div class="l-inner-sm">
+              <div class="c-breadcrumb">
+                <ul class="c-breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                  <li class="c-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a class="c-breadcrumb__link" href="./" itemid="" itemscope itemtype="https://schema.org/Thing" itemprop="item">
+                      <span itemprop="name"><i>TOP</i></span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                  </li>
+                  <li class="c-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <span itemprop="name"><i>SPECIAL CONTENT</i></span>
+                    <meta itemprop="position" content="2" />
+                  </li>
+                </ul>
+              </div>
+              <div class="p-special__fv__wrap">
+                <p class="p-special__fv__head"><i>SPECIAL CONTENT</i></p>
+                <h2 class="p-special__fv__title">
+                  <picture class="p-special__fv__img">
+                    <source srcset="./assets/images/special/special_title.webp" media="(max-width: 768px)" type="image/webp">
+                    <source srcset="./assets/images/special/special_title.png" media="(max-width: 768px)" type="image/png">
+                    <source srcset="./assets/images/special/special_title.webp" media="(min-width: 769px)" type="image/webp">
+                    <img src="./assets/images/special/special_title.png" alt="">
+                  </picture>
+                </h2>
+                <p class="p-special__fv__sub">「失敗」とは、<br class="u-hidden-pc">挑戦者の「勲章」である</p>
+                <p class="p-special__fv__text">全国でもいち早くワークウエアのECサイトを立ち上げ、右肩あがりに収益を伸ばしてきたミチオショップ。<br>
+                  ただ、その成長物語は決して順風満帆なものではなく<br>
+                  舞台裏では数々の「失敗＝しくじり」がありました。<br>
+                  でも、しくじりこそが、挑戦したことの証。過去のしくじりがあったからこそ、「今」がある。<br class="u-hidden-sp">
+                  そう胸を張りながら（恥ずかしながらですが）、しくじりの一部をご紹介します。</p>
+              </div>
+              <div class="p-special__fv__btn">
+                <a class="p-special__fv__link" href="#case_01">特別な<br class="u-hidden-pc">シューズ事件</a>
+                <a class="p-special__fv__link" href="#case_02">ケータイ事変</a>
+                <a class="p-special__fv__link" href="#case_03">八丈島から<br class="u-hidden-pc">の便り</a>
+              </div>
+            </div>
+          </section>
+          <section class="p-special__case">
+            <div class="l-inner-sm">
+              <div id="case_01" class="p-special__case__box">
+                <h2 class="c-heading l-inner-sm__sp text-white">
+                  <img class="c-heading__svg" src="./assets/images/top/icon-white.svg" alt="">
+                  <i>CASE 01</i>
+                </h2>
+                <div class="p-special__case__title">
+                  <h3 class="c-title"><span class="c-title-red">特別なシューズ</span><span class="c-title-white">事件</span></h3>
+                </div>
+                <div class="l-inner-content">
+                  <div class="p-special__case__content">
+                    <p class="p-special__case__text">
+                      あれは代表の竹内氏が25歳のとき。バブル崩壊後の失われた10年、竹内氏はミチオショップをどうにか軌道にのせようと躍起になっていました。<br>
+                      そんなとき自治体の入札で、とある靴を納品する案件がありました。どんな仕事でも手にしたかった竹内氏は、周りの同業者たちが「アレはやめとけ」と言っているのにも関わらず、仕様書もロクに確認せずに入札。そして案件を見事ゲットしたのですが…
+                    </p>
+                    <p class="p-special__case__text">
+                      よくよく仕様書を確認すると、靴の素材が特殊なものでAというメーカーしか扱っていない素材でした。そのことを同業者たちは全員分かっていたので手を出さなかったにも関わらず、若気の至り＆勢いで入札してしまったのです。<br>
+                      竹内氏はAのメーカーに頭を下げ、同業者たちの説教にも耳を傾け、どうにか納品することはできましたが、若さゆえの無謀な営業が、後々トラブルになることを痛感しました。
+                    </p>
+                  </div>
+                  <picture class="p-special__case__img">
+                    <source srcset="./assets/images/special/special_case_01_sp.webp" media="(max-width: 768px)" type="image/webp">
+                    <source srcset="./assets/images/special/special_case_01_sp.png" media="(max-width: 768px)" type="image/png">
+                    <source srcset="./assets/images/special/special_case_01.webp" media="(min-width: 769px)" type="image/webp">
+                    <img src="./assets/images/special/special_case_01.png" alt="">
+                  </picture>
+                </div>
+              </div>
+              <div id="case_02" class="p-special__case__box">
+                <h3 class="c-heading l-inner-sm__sp text-white p-crosstalk__heading">
+                  <img class="c-heading__svg" src="./assets/images/top/icon-white.svg" alt="">
+                  <i>CASE 02</i>
+                </h3>
+                <div class="p-special__case__title">
+                  <h3 class="c-title"><span class="c-title-red">ケータイ</span><span class="c-title-white">事変</span></h3>
+                </div>
+                <div class="l-inner-content">
+                  <div class="p-special__case__content">
+                    <p class="p-special__case__text">
+                      ミチオショップが混迷していた時代。ワークウエアの実店舗だけでなく、何か新たなビジネスの芽を探ろうと、さまざまなことにチャレンジしていた時代がありました。その一つが「携帯電話」の販売です。<br>
+                      時代はまだPHS主流で、ケータイも多くの人に行き<br class="u-hidden-pc">渡っていない頃。大手キャリアの二次代理店として、ミチオショップも携帯販売を手がけたことがありました。あの時代は、お客様からの契約料よりも、大手キャリアからの奨励金で売上もウナギのぼり。同じように携帯販売を手がけていた同業者たちも、全員がたった１
+                    </p>
+                    <p class="p-special__case__text">
+                      年で大きな売上を手にすることになりました。<br>
+                      人間は単純なもので、この栄光がずっと続くと勘違いして、しっかり調子に乗ってしまいました。すると大手キャリアの奨励金の設定が一気に下げられ、みるみるうちに事業が立ち行かなくなったのです。<br>
+                      ミチオショップは、その状況からいち早く抜け出して、次のビジネスにシフト転換。そのフットワーク良く動いた先に、ECサイトがありました。
+                    </p>
+                  </div>
+                  <picture class="p-special__case__img">
+                    <source srcset="./assets/images/special/special_case_02_sp.webp" media="(max-width: 768px)" type="image/webp">
+                    <source srcset="./assets/images/special/special_case_02_sp.png" media="(max-width: 768px)" type="image/png">
+                    <source srcset="./assets/images/special/special_case_02.webp" media="(min-width: 769px)" type="image/webp">
+                    <img src="./assets/images/special/special_case_02.png" alt="">
+                  </picture>
+                </div>
+              </div>
+              <div id="case_03" class="p-special__case__box">
+                <h3 class="c-heading l-inner-sm__sp text-white p-crosstalk__heading">
+                  <img class="c-heading__svg" src="./assets/images/top/icon-white.svg" alt="">
+                  <i>CASE 03</i>
+                </h3>
+                <div class="p-special__case__title">
+                  <h3 class="c-title"><span class="c-title-red">八丈島</span><span class="c-title-white">からの便り</span></h3>
+                </div>
+                <div class="l-inner-content">
+                  <div class="p-special__case__content">
+                    <p class="p-special__case__text">
+                      ミチオショップは、業界でもいち早くECサイトを立ち上げたのですが、その始めの1歩はスムーズにいかなかったようで…<br>
+                      Yahoo!ショッピングに出店したときの記念すべき第一号のお客様は、八丈島にある給食センター。白衣と長靴が欲しい、というオーダーだったのですが、まず「八丈島ってどこ？」と社内に激震が走りました。<br>
+                      八丈島は東京都の本土から約280km先に南下した伊豆諸島の一つ。そもそも、そんな場所から受注があるのは初めてのこと。今ではECは全国どこからでも注文を受けられるのが当たり前ですが、当時はそこまで想像が及んでいなかったのです。
+                    </p>
+                    <p class="p-special__case__text">
+                      そこで浮かび上がったのが、送料問題。八丈島までの距離を送料に反映していなかったため、結局送料を負担して赤字になってしまいました。<br>
+                      でも、赤字になったことより伊豆諸島から注文が来たことの衝撃は、のちの可能性を大きく感じさせてくれるものでした。<br>
+                      それ以降も、防寒アイテムを大量に仕入れたのに、暖冬でさっぱり売れなかったり、数々の失敗がありました。それでも自ら動いて体験することで、より良いサービスや商品ラインナップへと昇華していくことになったのです。
+                    </p>
+                  </div>
+                  <picture class="p-special__case__img">
+                    <source srcset="./assets/images/special/special_case_03_sp.webp" media="(max-width: 768px)" type="image/webp">
+                    <source srcset="./assets/images/special/special_case_03_sp.png" media="(max-width: 768px)" type="image/png">
+                    <source srcset="./assets/images/special/special_case_03.webp" media="(min-width: 769px)" type="image/webp">
+                    <img src="./assets/images/special/special_case_03.png" alt="">
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+  </div>
+  </main>
+
+  <footer class="p-footer">
+    <div class="p-footer__inner l-inner">
+      <div class="p-footer__btn">
+        <a class="p-footer__btn__link" href="#">ENTRY</a>
+      </div>
+      <nav class="p-footer__nav">
+        <ul class="p-footer__lists">
+          <li class="p-footer__list"><a href="company.html"><i>COMPANY</i><span class="p-footer__list-ja u-hidden-pc">会社情報</span></a></li>
+          <li class="p-footer__list"><a href="human&works.html"><i>WORKS & HUMAN</i><span class="p-footer__list-ja u-hidden-pc">人と仕事を知る</span></a></li>
+          <li class="p-footer__list"><a href="special.html"><i>SPECIAL CONTENT</i><span class="p-footer__list-ja u-hidden-pc">しくじりリスト</span></a></li>
+          <li class="p-footer__list"><a href="career.html"><i>CAREER</i><span class="p-footer__list-ja u-hidden-pc">キャリアを知る</span></a></li>
+          <li class="p-footer__list"><a href="recruit.html"><i>RECRUIT</i><span class="p-footer__list-ja u-hidden-pc">採用情報</span></a></li>
+        </ul>
+      </nav>
+      <a class="p-footer__logo" href="./">
+        <picture>
+          <source srcset="./assets/images/common/footer_logo.webp" media="(max-width: 768px)" type="image/webp">
+          <source srcset="./assets/images/common/footer_logo.png" media="(max-width: 768px)" type="image/webp">
+          <source srcset="./assets/images/common/footer_logo.webp" media="(min-width: 769px)" type="image/webp">
+          <img src="./assets/images/common/footer_logo.png" alt="">
+        </picture>
+      </a>
+      <p class="p-footer__copy"><small>COPYRIGHT &copy;  MICHIO SHOP CO.,LTD. ALL RIGHTS RESERVED.</small></p>
+    </div>
+  </footer>
+  <!-- JavaScript -->
+  <script src="./assets/js/script.js?ver=8135459498"></script>
+</body>
+
+</html>

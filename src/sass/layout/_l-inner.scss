@@ -1,0 +1,42 @@
+@use "global" as *;
+
+// インナー
+.l-inner {
+  margin: 0 auto;
+  width: 100%;
+  height: inherit;
+  max-width: get-pc-vw(1306);
+
+  @include mq(md) {
+    max-width: get-sp-vw(353);
+  }
+}
+
+.l-inner-sm {
+  margin: 0 auto;
+  width: 100%;
+  height: inherit;
+  max-width: get-pc-vw(1200);
+
+  @include mq(md) {
+    max-width: get-sp-vw(353);
+  }
+}
+
+.l-inner-content {
+  margin: 0 auto;
+  width: 100%;
+  height: inherit;
+  max-width: get-pc-vw(1100);
+
+  @include mq(md) {
+    max-width: get-sp-vw(353);
+  }
+}
+
+.l-inner-sm__sp {
+  @include mq(md) {
+    margin: 0 auto;
+    max-width: get-sp-vw(340);
+  }
+}

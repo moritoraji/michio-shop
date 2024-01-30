@@ -1,0 +1,221 @@
+@use "global" as *;
+
+.p-top__message {
+  position: relative;
+  padding-bottom: 0;
+
+  @include mq(md) {
+      padding-bottom: get-pc-vw(18);
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: get-pc-vw(-120);
+    left: 0;
+    width: 100%;
+    height: 107%;
+    background-image: url(../../assets/images/top/message_bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+    @include mq(md) {
+      top: get-sp-vw(-25);
+      background-image: url(../../assets/images/top/message_bg_sp.png);
+    }
+  }
+}
+
+.p-top__message__content {
+  padding-left: get-pc-vw(54);
+  margin-top: get-pc-vw(-68);
+  padding-bottom: get-pc-vw(82);
+  position: relative;
+
+  @include mq(md) {
+    padding-left: get-sp-vw(10);
+    padding-bottom: get-sp-vw(218);
+  }
+}
+
+.p-top__message__sub {
+  @include font(40, 65, 0, 900);
+  padding-top: get-pc-vw(18);
+
+  @include mq(md) {
+    font-size: get-sp-vw(25);
+  }
+}
+
+.p-top__message__text {
+  color: $black;
+  @include font(18, 35, 0, 700);
+  padding-top: get-pc-vw(20);
+
+  @include mq(md) {
+    font-size: get-sp-vw(13);
+    padding-top: get-sp-vw(25);
+  }
+}
+
+.p-top__message__img {
+  position: absolute;
+  bottom: 0;
+  right: get-pc-vw(-20);
+  width: get-pc-vw(500);
+
+  @include mq(md) {
+    width: get-sp-vw(315);
+    right: 51%;
+    transform: translateX(50%);
+  }
+}
+
+.p-top__message__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include mq(md) {
+    flex-direction: column;
+  }
+
+}
+
+.p-top__message__item {
+  width: 32.8%;
+  position: relative;
+  padding-bottom: get-pc-vw(78);
+  margin-bottom: get-pc-vw(80);
+
+  @include mq(md) {
+    width: 100%;
+    padding-bottom: get-sp-vw(48);
+    margin-bottom: get-sp-vw(46);
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: $black;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 34%;
+    height: 8px;
+    bottom: 0;
+    right: 0;
+    background-color: $black;
+
+    @include mq(md) {
+      width: 30%;
+    }
+  }
+}
+
+.p-top__message__link {
+  display: block;
+  margin-bottom: get-pc-vw(0);
+  position: relative;
+
+  @include mq(md) {
+    margin-bottom: get-sp-vw(24);
+  }
+
+  img {
+    border-radius: get-pc-vw(5);
+
+    @include mq(md) {
+      border-radius: get-sp-vw(5);
+    }
+  }
+
+  &::before {
+    opacity: 0;
+    position: absolute;
+    content: "";
+    width: 96%;
+    height: 95%;
+    border-radius: get-pc-vw(5);
+    border: solid get-pc-vw(2) $white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s all;
+    @include mq(md) {
+      border-radius: get-sp-vw(5);
+      border: solid get-sp-vw(2) $white;
+    }
+  }
+
+  &:hover {
+    &::before {
+      opacity: 1;
+      position: absolute;
+      content: "";
+      width: 96%;
+      height: 95%;
+      border-radius: get-pc-vw(5);
+      border: solid get-pc-vw(2) $white;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: 0.3s all;
+      @include mq(md) {
+        border-radius: get-sp-vw(5);
+        border: solid get-sp-vw(2) $white;
+      }
+    }
+  }
+}
+
+.p-top__message__heading {
+  flex-direction: column;
+  align-items: flex-start;
+  @include font(25, 25, 60, 900);
+
+  @include mq(md) {
+    margin-left: get-sp-vw(10);
+  }
+}
+
+.p-top__message__heading-en {
+  margin-top: get-pc-vw(20);
+  margin-left: get-pc-vw(10);
+
+  @include mq(md) {
+    font-size: get-sp-vw(13);
+    margin-top: get-sp-vw(6);
+  }
+}
+
+.p-top__message__heading-ja {
+  display: block;
+  font-family: $base-font-family;
+  @include font(48, 60, 0, 900);
+
+  @include mq(md) {
+    font-size: get-sp-vw(32);
+    margin-top: get-sp-vw(10);
+  }
+}
+
+.p-top__message__list__text {
+  color: $black;
+  @include font(16, 31, 20, 500);
+  margin-top: get-pc-vw(13);
+
+  @include mq(md) {
+    margin-left: 0;
+    font-size: get-sp-vw(13);
+    margin-top: get-sp-vw(14);
+    letter-spacing: 0;
+  }
+}

@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.c-title {
+  font-size: get-pc-vw(100);
+  font-weight: 900;
+  margin-top: get-pc-vw(10);
+
+  @include mq(md) {
+    font-size: get-sp-vw(40);
+    margin-top: get-sp-vw(10);
+  }
+}
+
+.c-title--sp {
+  @include mq(md) {
+    font-size: get-sp-vw(35);
+    margin-top: get-sp-vw(10);
+  }
+}
+
+.c-title-sm {
+  font-size: get-pc-vw(80);
+  font-weight: 900;
+  margin-top: get-pc-vw(10);
+  letter-spacing: -0.06em;
+
+  @include mq(md) {
+    font-size: get-sp-vw(30);
+    margin-top: get-sp-vw(10);
+    line-height: 1.5;
+  }
+}
+
+.c-title-red {
+  display: inline-block;
+  color: $base-color;
+}
+
+.c-title-white {
+  display: inline-block;
+  color: $white;
+}

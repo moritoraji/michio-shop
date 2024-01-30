@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide{
+  width: get-pc-vw(460);
+  margin-right: 20px;
+  transition: .3s;
+}
+
+.swiper-initialized .swiper-wrapper {
+  transition-timing-function: linear;
+}

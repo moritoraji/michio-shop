@@ -1,0 +1,8 @@
+.DS_Store
+.vscode
+dist
+package-lock.json
+src/node_modules
+wpTheme/assets
+
+

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>人と仕事を知る</title>
+  <meta name="description" content="コンポーネントリストの概要です" />
+  <!-- ogp -->
+  <meta property="og:title" content="コンポーネント" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com" />
+  <meta property="og:image" content="https://example.com/images/common/ogp.jpg" />
+  <meta property="og:site_name" content="コンポーネント" />
+  <meta property="og:description" content="コンポーネントリストの概要です" />
+  <!-- twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="コンポーネントリストの概要です" />
+  <meta name="twitter:title" content="コンポーネント" />
+  <meta name="twitter:image" content="https://example.com/images/common/ogp.jpg" />
+  <!-- icon -->
+  <link rel="icon" href="./assets/images/common/icon-16x16.png" sizes="16x16" type="image/png" />
+  <link rel="apple-touch-icon" href="./assets/images/common/apple-touch-icon-152x152.png" />
+
+  <!-- googlefonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/style.css?ver=8135459498" />
+</head>
+<body>
+  <header class="p-header l-header" id="js-header">
+    <div class="p-header__inner l-inner">
+      <div class="p-header__logo">
+        <h1 class="p-header__logo">
+          <a class="p-header__link" href="./">
+            ロゴ
+            <picture>
+              <source srcset="./assets/images/common/logo.webp" type="image/webp" width="180" height="50">
+              <img src="./assets/images/common/logo.png" alt="" decoding="async" width="180" height="50">
+            </picture>
+          </a>
+        </h1>
+      </div>
+      <nav class="p-header__nav">
+        <ul class="p-header__lists">
+          <li class="p-header__list"><a href="company.html"><i>COMPANY</i></a></li>
+          <li class="p-header__list"><a href=""><i>WORKS & HUMAN</i></a></li>
+          <li class="p-header__list"><a href="special.html"><i>SPECIAL CONTENT</i></a></li>
+          <li class="p-header__list"><a href="career.html"><i>CAREER</i></a></li>
+          <li class="p-header__list"><a href="recruit.html"><i>RECRUIT</i></a></li>
+          <li class="p-header__entry"><a href="#">ENTRY</a></li>
+        </ul>
+      </nav>
+      <nav id="js-nav" class="p-header__nav_sp">
+        <div class="p-header__nav_scroll">
+          <div class="p-header__nav__logo">
+            <picture>
+              <source srcset="./assets/images/common/logo_nav.webp" type="image/webp" width="180" height="50">
+              <img src="./assets/images/common/logo_nav.png" alt="" decoding="async" width="180" height="50">
+            </picture>
+          </div>
+          <ul class="p-header__lists_sp">
+            <li class="p-header__list_sp"><a href="company.html"><i>COMPANY</i><span class="p-header__list-ja u-hidden-pc">会社情報</span></a></li>
+            <li class="p-header__list_sp"><a href=""><i>WORKS & HUMAN</i><span class="p-header__list-ja u-hidden-pc">人と仕事を知る</span></a></li>
+            <li class="p-header__list_sp"><a href="special.html"><i>SPECIAL</i><span class="p-header__list-ja u-hidden-pc">しくじりリスト</span></a></li>
+            <li class="p-header__list_sp"><a href="career.html"><i>CAREER</i><span class="p-header__list-ja u-hidden-pc">キャリアを知る</span></a></li>
+            <li class="p-header__list_sp"><a href="recruit.html"><i>RECRUIT</i><span class="p-header__list-ja u-hidden-pc">採用情報</span></a></li>
+          </ul>
+          <div class="p-header__nav__logo2">
+            <picture>
+              <source srcset="./assets/images/common/footer_logo.webp" type="image/webp">
+              <img src="./assets/images/common/footer_logo.png" alt="">
+            </picture>
+          </div>
+          <p class="p-header__nav__copy"><small>COPYRIGHT &copy; MICHIO SHOP CO.,LTD. ALL RIGHTS RESERVED.</small></p>
+          <div class="p-header__nav__btn">
+            <a class="p-header__nav__link" href="">ENTRY</a>
+          </div>
+        </div>
+      </nav>
+      <div id="js-menu" class="p-header__menu_btn_wrapper u-hidden-pc">
+        <button id="js-menu_btn" type="button" class="p-header__menu_btn">
+          <span class="p-header__menu_btn_line"></span>
+          <span class="p-header__menu_btn_line"></span>
+          <span class="p-header__menu_btn_text">MENU</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="p-main">
+    <section class="p-crosstalk__fv">
+      <div class="l-inner-sm l-inner-sm__sp">
+        <div class="c-breadcrumb">
+          <ul class="c-breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li class="c-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a class="c-breadcrumb__link" href="./" itemid="" itemscope itemtype="https://schema.org/Thing" itemprop="item">
+                <span itemprop="name"><i>TOP</i></span>
+              </a>
+              <meta itemprop="position" content="1">
+            </li>
+            <li class="c-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+              <a class="c-breadcrumb__link" href="./" itemid="" itemscope itemtype="https://schema.org/Thing" itemprop="item">
+                <span itemprop="name"><i>HUMAN & WORKS</i></span>
+              </a>
+              <meta itemprop="position" content="2" />
+            </li>
+            <li class="c-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+              <span itemprop="name"><i>CROSSTALK 03</i></span>
+              <meta itemprop="position" content="3" />
+            </li>
+          </ul>
+        </div>
+        <h2 class="c-title-sm">社長を一言で表すなら<br><span class="c-title-red">人を超えた生命体？<br class="u-hidden-pc">赤レンジャー？</span></h2>
+      </div>
+      <div class="l-inner">
+        <div class="p-crosstalk__fv__wrap p-crosstalk__fv__03 u-hidden-pc">
+          <picture>
+            <source class="p-crosstalk__fv__img u-hidden-pc" srcset="./assets/images/crosstalk/fv_03_sp.webp" media="(max-width: 768px)" type="image/webp">
+            <img class="p-crosstalk__fv__img u-hidden-pc" src="./assets/images/crosstalk/fv_03_sp.jpg" alt="">
+          </picture>
+        </div>
+      </div>
+      <div class="l-inner-sm p-crosstalk__fv__inner">
+        <p class="p-crosstalk__fv__text">
+          入社１〜２年目の若手社員と社長に<br class="u-hidden-pc">よるスペシャル対談を企画！若手３名が揃って<br class="u-hidden-pc">口にするのは、<br class="u-hidden-sp">
+          「説明会を社長自身がやっていてビックリした！」という声。そこには社長なりの深〜い考えがあったみたいですが…。<br>
+          普段から言いたいことは言い合える仲ではありますが、<br class="u-hidden-pc">改めて２０歳以上も年代の離れたメンバーたちと社長による、<br class="u-hidden-sp">
+          ぶっちゃけトークを開催してもらいました。
+        </p>
+      </div>
+      <div class="l-inner">
+        <div class="p-crosstalk__fv__wrap p-crosstalk__fv__03 u-hidden-sp">
+          <picture>
+            <source class="p-crosstalk__fv__img u-hidden-sp" media="(min-width: 769px)" srcset="./assets/images/crosstalk/fv_03.webp" type="image/webp">
+            <img class="p-crosstalk__fv__img u-hidden-sp" src="./assets/images/crosstalk/fv_03.jpg" alt="">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="p-crosstalk__member">
+      <div class="l-inner-sm">
+        <div class="p-crosstalk__member__flex">
+          <h3 class="c-heading l-inner-sm__sp text-red p-crosstalk__heading">
+            <img class="c-heading__svg" src="./assets/images/top/icon-red.svg" alt="">
+            <i>MEMBER</i>
+          </h3>
+          <div class="p-crosstalk__content p-crosstalk__content3">
+            <div class="p-crosstalk__content__wrap">
+              <div class="p-crosstalk__content__head">
+                <picture>
+                  <source class="p-crosstalk__content__img" srcset="./assets/images/crosstalk/member_img_07.webp" type="image/webp">
+                  <img class="p-crosstalk__content__img" src="./assets/images/crosstalk/member_img_07.jpg" alt="">
+                </picture>
+                <div class="p-crosstalk__content__sp">
+                  <p class="p-crosstalk__content__name">竹内 秀勝</p>
+                  <p class="p-crosstalk__content__sub">代表取締役<br></p>
+                </div>
+              </div>
+            </div>
+            <div class="p-crosstalk__content__wrap">
+              <div class="p-crosstalk__content__head">
+                <picture>
+                  <source class="p-crosstalk__content__img" srcset="./assets/images/crosstalk/member_img_04.webp" type="image/webp">
+                  <img class="p-crosstalk__content__img" src="./assets/images/crosstalk/member_img_04.jpg" alt="">
+                </picture>
+                <div class="p-crosstalk__content__sp">
+                  <p class="p-crosstalk__content__name">K.M</p>
+                  <p class="p-crosstalk__content__sub">総務部<br>
+                    2022年入社
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-crosstalk__content__wrap">
+              <div class="p-crosstalk__content__head">
+                <picture>
+                  <source class="p-crosstalk__content__img" srcset="./assets/images/crosstalk/member_img_05.webp" type="image/webp">
+                  <img class="p-crosstalk__content__img" src="./assets/images/crosstalk/member_img_05.jpg" alt="">
+                </picture>
+                <div class="p-crosstalk__content__sp">
+                  <p class="p-crosstalk__content__name">N.A</p>
+                  <p class="p-crosstalk__content__sub">インターネット<br class="u-hidden-pc">事業部<br>
+                    2022年入社<br>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-crosstalk__content__wrap p-crosstalk__content__wrap2">
+              <div class="p-crosstalk__content__head">
+                <picture>
+                  <source class="p-crosstalk__content__img" srcset="./assets/images/crosstalk/member_img_06.webp" type="image/webp">
+                  <img class="p-crosstalk__content__img" src="./assets/images/crosstalk/member_img_06.jpg" alt="">
+                </picture>
+                <div class="p-crosstalk__content__sp">
+                  <p class="p-crosstalk__content__name">I.R</p>
+                  <p class="p-crosstalk__content__sub">物流事業部<br>
+                    2023年入社
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-crosstalk__member__flex2">
+          <h3 class="c-heading text-red p-crosstalk__heading">
+            <img class="c-heading__svg" src="./assets/images/top/icon-red.svg" alt="">
+            <i>THEME 01</i>
+          </h3>
+          <div class="p-crosstalk__content2">
+            <p class="p-crosstalk__content2__head js-accordion">説明会に社長が<br class="u-hidden-pc">登場するのはナゼ！？</p>
+            <ul class="p-crosstalk__content2__list">
+              <li class="p-crosstalk__content2__item">
+                <p class="p-crosstalk__content2_item__text-red">K.M : </p>
+                <p class="p-crosstalk__content2__item__text">就活で合同説明会に行ったとき、社長がブースで説明をしていて驚いたんですけど…</p>
+              </li>
+              <li class="p-crosstalk__content2__item">
+                <p class="p-crosstalk__content2_item__text-red">N.A : </p>
+                <p class="p-crosstalk__content2__item__text">そう！スーツの人がいるなぁと思ったら、え、社長？みたいな。ものすごくパワフルな人だなぁって。</p>
+              </li>
+              <li class="p-crosstalk__content2__item">
+                <p class="p-crosstalk__content2_item__text-red">I.R : </p>
+                <p class="p-crosstalk__content2__item__text">私は中途入社なんですけど、最初の面接から社長でしたよ（笑）</p>
+              </li>
+              <li class="p-crosstalk__content2__item">
+                <p class="p-crosstalk__content2_item__text-red">K.M : </p>
+                <p class="p-crosstalk__content2__item__text">さすがや…あれ、なんで社長がやっているんですか？</p>
+              </li>
+              <li class="p-crosstalk__content2__item">
+                <p class="p-crosstalk__content2_item__text-red">竹内 : </p>
+                <p class="p-crosstalk__content2__item__text">なんか、この年齢（48歳）になると自分の世界だけで仕事をしてしまう危険もあって。何も知らない学生さんの意見や反応を感じたいという想いもあって。説明会や面接に出るたびに新しい発見もあるしね。</p>
+              </li>
+              <li class="p-crosstalk__content2__item">
+                <p class="p-crosstalk__content2_item__text-red">N.A : </p>
+                <p class="p-crosstalk__content2__item__text">一方的に説明するのではなくて、すごく学生目線で話をしているなぁと感じましたよ。経営の知識とか今後も使えそうなことまで教えてくれたりして。</p>
+              </li>
+              <li class="p-crosstalk__content2__item">
+                <p class="p-crosstalk__content2_item__text-red">竹内 : </p>
+                <p class="p-crosstalk__content2__item__text">それは意識しているなぁ。説明会は普通「うちに来て！」という企業側のアピールの場なんだけど、あまりそれはやりたくなくて。せっかくだからタメになったと思ってもらえるような説明会をしています。</p>
+              </li>
+              <li class="p-crosstalk__content2__item">
+                <p class="p-crosstalk__content2_item__text-red">K.M : </p>
+                <p class="p-crosstalk__content2__item__text">いい意味で堅苦しくないというか。そもそも社長、「資料は後で見ればいいから」って、資料に書いてないことばかり喋って。</p>
+              </li>
+              <li class="p-crosstalk__content2__item">
+                <p class="p-crosstalk__content2_item__text-red">N.A : </p>
+                <p class="p-crosstalk__content2__item__text">アドリブですよね、あれ</p>
+              </li>
+              <li class="p-crosstalk__content2__item">
+                <p class="p-crosstalk__content2_item__text-red">竹内 : </p>
+                <p class="p-crosstalk__content2__item__text">うん、毎回違うことを話しています。</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <picture class="p-crosstalk__content2__img">
+        <source srcset="./assets/images/crosstalk/member_bg_03_sp.webp" media="(max-width: 768px)" type="image/webp">
+        <source srcset="./assets/images/crosstalk/member_bg_03_sp.jpg" media="(max-width: 768px)" type="image/jpg">
+        <source srcset="./assets/images/crosstalk/member_bg_03.webp" media="(min-width: 769px)" type="image/webp">
+        <img src="./assets/images/crosstalk/member_bg_03.jpg" alt="">
+      </picture>
+      <div class="l-inner-sm">
+        <div class="p-crosstalk__member__flex2">
+          <h3 class="c-heading text-red p-crosstalk__heading">
+            <img class="c-heading__svg" src="./assets/images/top/icon-red.svg" alt="">
+            <i>THEME 02</i>
+          </h3>
+          <div class="p-crosstalk__content2">
+            <p class="p-crosstalk__content2__head js-accordion">お互いの第一印象は？</p>
+            <ul class="p-crosstalk__content2__list">
+              <li class="p-crosstalk__content2__item">
+                <p class="p-crosstalk__content2_item__text-red">竹内 : </p>
+                <p class="p-crosstalk__content2__item__text">I.Rさんは、ワークウエアに会社のロゴや名前をミシンで加工する仕事で応募してきてくれたんだけど、先に枠が埋まってしまって、でもとにかく「笑顔」が素敵だったから一緒に働きたいと、物流事業部に枠を作って入社してもらいました。</p>
+              </li>
+              <li class="p-crosstalk__content2__item">
+                <p class="p-crosstalk__content2_item__text-red">N.A : </p>
+                <p class="p-crosstalk__content2__item__text">私の社長の印象は、とにかくエネルギッシュ！入社後も最初の印象のママでしたね。</p>
+              </li>
+              <li class="p-crosstalk__content2__item">
+                <p class="p-crosstalk__content2_item__text-red">竹内 : </p>
+                <p class="p-crosstalk__content2__item__text">N.Aさんは絵が得意って言っていたから、その場で3分で絵を描いてもらったんだけど、とにかく抜群にうまかった。完成度が高くて、芸術家タイプかなぁと。</p>
+              </li>
+              <li class="p-crosstalk__content2__item">
+                <p class="p-crosstalk__content2_item__text-red">K.M : </p>
+                <p class="p-crosstalk__content2__item__text">私は研修のときに、なんでその流れになったのか覚えていないんですが、「社長は戦隊ヒーローでいったら赤レンジャーです！」と言って、それをずっといじられています。</p>
+              </li>
+              <li class="p-crosstalk__content2__item">
+                <p class="p-crosstalk__content2_item__text-red">竹内 : </p>
+                <p class="p-crosstalk__content2__item__text">いやぁ、自分だと黒レンジャーだと思っていたからね。それ以降、みんなに「俺って何レンジャー？」って聞くようになりました。K.Mさんは第一印象がほぼ完璧。なんでもソツなくこなしていて、いつかボロが出るのかなぁと思っているのだけど（笑）。</p>
+              </li>
+              <li class="p-crosstalk__content2__item">
+                <p class="p-crosstalk__content2_item__text-red">K.M : </p>
+                <p class="p-crosstalk__content2__item__text">そろそろバレてきていますかね。</p>
+              </li>
+            </ul>
+            <picture>
+              <source srcset="./assets/images/crosstalk/theme_img_07_sp.webp" media="(max-width: 768px)" type="image/webp">
+              <source srcset="./assets/images/crosstalk/theme_img_07_sp.jpg" media="(max-width: 768px)" type="image/jpg">
+              <source srcset="./assets/images/crosstalk/theme_img_07.webp" type="image/webp">
+              <img src="./assets/images/crosstalk/theme_img_07.jpg" alt="">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="l-inner-sm">
+        <div class="p-crosstalk__member__flex2">
+          <h3 class="c-heading text-red p-crosstalk__heading">
+            <img class="c-heading__svg" src="./assets/images/top/icon-red.svg" alt="">
+            <i>THEME 03</i>
+          </h3>
+          <div class="p-crosstalk__content2">
+            <p class="p-crosstalk__content2__head js-accordion">若手メンバーに<br class="u-hidden-pc">期待していること</p>
+            <ul class="p-crosstalk__content2__list">
+              <li class="p-crosstalk__content2__item">
+                <p class="p-crosstalk__content2_item__text-red">竹内 : </p>
+                <p class="p-crosstalk__content2__item__text">これは全従業員に対しての想いでもあるんだけど、仕事人間になっても良くないし、プライベート重視になっても良くない。仕事も、プライベートも充実させて幸せを感じてほしいし、そういった会社にしたいと思っています。</p>
+              </li>
+              <li class="p-crosstalk__content2__item">
+                <p class="p-crosstalk__content2_item__text-red">K.M : </p>
+                <p class="p-crosstalk__content2__item__text">まぁプライベートはアクティブに動き回っていますけど、総務の仕事にはまだ慣れていなくて。数字を間違っちゃいけないプレッシャーもあるし。</p>
+              </li>
+              <li class="p-crosstalk__content2__item">
+                <p class="p-crosstalk__content2_item__text-red">竹内 : </p>
+                <p class="p-crosstalk__content2__item__text">時間と共にできることは増えていくから。コツコツやっていくことも大切なスキルの一つじゃないかな。</p>
+              </li>
+              <li class="p-crosstalk__content2__item">
+                <p class="p-crosstalk__content2_item__text-red">I.R : </p>
+                <p class="p-crosstalk__content2__item__text">物流事業部は社員が2人で、あとはパートさん。色々な年代の人をまとめていくのは大変ですけど、それだけ色々な人と関われる面白さもあると思っています。荷物を運んでいるときに社長が通りかかったら一緒に荷物を運んでくれますし。</p>
+              </li>
+              <li class="p-crosstalk__content2__item">
+                <p class="p-crosstalk__content2_item__text-red">N.A : </p>
+                <p class="p-crosstalk__content2__item__text">あと社長、お菓子をくれますよね（笑）。食事の福利厚生も充実させてくれて。</p>
+              </li>
+              <li class="p-crosstalk__content2__item">
+                <p class="p-crosstalk__content2_item__text-red">竹内 : </p>
+                <p class="p-crosstalk__content2__item__text">逆に言うと、自分からみんなが何を求めているのか気づけない部分もあるから、年2回要望書を書いてもらって、それに全力で応えていくやり方を取っています。</p>
+              </li>
+              <li class="p-crosstalk__content2__item">
+                <p class="p-crosstalk__content2_item__text-red">K.M :  </p>
+                <p class="p-crosstalk__content2__item__text">いつもありがとうございます！</p>
+              </li>
+              <li class="p-crosstalk__content2__item">
+                <p class="p-crosstalk__content2_item__text-red">竹内 : </p>
+                <p class="p-crosstalk__content2__item__text"> 年齢とか能力とかじゃなくて、みんながこの会社に存在意義を感じて欲しいから、働き方の選択肢ももっと自由にしたい。課長になったけど、ちょっとしんどくなったんでパートになります、子どもの手が離れたから社員になります、とか。どんどんチャレンジして、無理なら戻って、自分に合ったキャリアを描ける会社にしたいと思っています！</p>
+              </li>
+            </ul>
+            <picture>
+              <source srcset="./assets/images/crosstalk/theme_img_08_sp.webp" media="(max-width: 768px)" type="image/webp">
+              <source srcset="./assets/images/crosstalk/theme_img_08_sp.jpg" media="(max-width: 768px)" type="image/jpg">
+              <source srcset="./assets/images/crosstalk/theme_img_08.webp" type="image/webp">
+              <img src="./assets/images/crosstalk/theme_img_08.jpg" alt="">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <picture class="p-crosstalk__img">
+        <source srcset="./assets/images/crosstalk/theme_img_09_sp.webp" media="(max-width: 768px)" type="image/webp">
+        <source srcset="./assets/images/crosstalk/theme_img_09_sp.jpg" media="(max-width: 768px)" type="image/jpg">
+        <source srcset="./assets/images/crosstalk/theme_img_09.webp" type="image/webp">
+        <img src="./assets/images/crosstalk/theme_img_09.jpg" alt="">
+      </picture>
+    </section>
+  </main>
+  <footer class="p-footer">
+    <div class="p-footer__inner l-inner">
+      <div class="p-footer__btn">
+        <a class="p-footer__btn__link" href="">ENTRY</a>
+      </div>
+      <nav class="p-footer__nav">
+        <ul class="p-footer__lists">
+          <li class="p-footer__list"><a href=""><i>COMPANY</i><span class="p-footer__list-ja u-hidden-pc">会社情報</span></a></li>
+          <li class="p-footer__list"><a href=""><i>WORKS & HUMAN</i><span class="p-footer__list-ja u-hidden-pc">人と仕事を知る</span></a></li>
+          <li class="p-footer__list"><a href="special.html"><i>SPECIAL CONTENT</i><span class="p-footer__list-ja u-hidden-pc">しくじりリスト</span></a></li>
+          <li class="p-footer__list"><a href="career.html"><i>CAREER</i><span class="p-footer__list-ja u-hidden-pc">キャリアを知る</span></a></li>
+          <li class="p-footer__list"><a href="recruit.html"><i>RECRUIT</i><span class="p-footer__list-ja u-hidden-pc">採用情報</span></a></li>
+        </ul>
+      </nav>
+      <a class="p-footer__logo" href="./">
+        <picture>
+          <source srcset="./assets/images/common/footer_logo.webp" media="(max-width: 768px)" type="image/webp">
+          <source srcset="./assets/images/common/footer_logo.png" media="(max-width: 768px)" type="image/webp">
+          <source srcset="./assets/images/common/footer_logo.webp" media="(min-width: 769px)" type="image/webp">
+          <img src="./assets/images/common/footer_logo.png" alt="">
+        </picture>
+      </a>
+      <p class="p-footer__copy"><small>COPYRIGHT &copy; MICHIO SHOP CO.,LTD. ALL RIGHTS RESERVED.</small></p>
+    </div>
+  </footer>
+  <!-- JavaScript -->
+  <script src="./assets/js/script.js?ver=8135459498"></script>
+</body>
+</html>

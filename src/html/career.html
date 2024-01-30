@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>キャリアを知る</title>
+  <meta name="description" content="コンポーネントリストの概要です" />
+  <!-- ogp -->
+  <meta property="og:title" content="コンポーネント" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com" />
+  <meta property="og:image" content="https://example.com/images/common/ogp.jpg" />
+  <meta property="og:site_name" content="コンポーネント" />
+  <meta property="og:description" content="コンポーネントリストの概要です" />
+  <!-- twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="コンポーネントリストの概要です" />
+  <meta name="twitter:title" content="コンポーネント" />
+  <meta name="twitter:image" content="https://example.com/images/common/ogp.jpg" />
+  <!-- icon -->
+  <link rel="icon" href="./assets/images/common/icon-16x16.png" sizes="16x16" type="image/png" />
+  <link rel="apple-touch-icon" href="./assets/images/common/apple-touch-icon-152x152.png" />
+
+  <!-- googlefonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+
+
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/style.css?ver=8135459498" />
+
+</head>
+
+<body>
+  <header class="p-header l-header" id="js-header">
+    <div class="p-header__inner l-inner">
+      <div class="p-header__logo">
+        <h1 class="p-header__logo">
+          <a class="p-header__link" href="./">
+            ロゴ
+            <picture>
+              <source srcset="./assets/images/common/logo.webp" type="image/webp" width="180" height="50">
+              <img src="./assets/images/common/logo.png" alt="" decoding="async" width="180" height="50">
+            </picture>
+          </a>
+        </h1>
+      </div>
+      <nav class="p-header__nav">
+        <ul class="p-header__lists">
+          <li class="p-header__list"><a href="company.html"><i>COMPANY</i></a></li>
+          <li class="p-header__list"><a href="human&works.html"><i>WORKS & HUMAN</i></a></li>
+          <li class="p-header__list"><a href="special.html"><i>SPECIAL CONTENT</i></a></li>
+          <li class="p-header__list"><a href="career.html"><i>CAREER</i></a></li>
+          <li class="p-header__list"><a href="recruit.html"><i>RECRUIT</i></a></li>
+          <li class="p-header__entry"><a href="#">ENTRY</a></li>
+        </ul>
+      </nav>
+      <nav id="js-nav" class="p-header__nav_sp">
+        <div class="p-header__nav_scroll">
+          <div class="p-header__nav__logo">
+            <picture>
+              <source srcset="./assets/images/common/logo_nav.webp" type="image/webp" width="180" height="50">
+              <img src="./assets/images/common/logo_nav.png" alt="" decoding="async" width="180" height="50">
+            </picture>
+          </div>
+          <ul class="p-header__lists_sp">
+            <li class="p-header__list_sp"><a href="company.html"><i>COMPANY</i><span class="p-header__list-ja u-hidden-pc">会社情報</span></a></li>
+            <li class="p-header__list_sp"><a href="human&works.html"><i>WORKS & HUMAN</i><span class="p-header__list-ja u-hidden-pc">人と仕事を知る</span></a></li>
+            <li class="p-header__list_sp"><a href="special.html"><i>SPECIAL</i><span class="p-header__list-ja u-hidden-pc">しくじりリスト</span></a></li>
+            <li class="p-header__list_sp"><a href="career.html"><i>CAREER</i><span class="p-header__list-ja u-hidden-pc">キャリアを知る</span></a></li>
+            <li class="p-header__list_sp"><a href="recruit.html"><i>RECRUIT</i><span class="p-header__list-ja u-hidden-pc">採用情報</span></a></li>
+          </ul>
+          <div class="p-header__nav__logo2" >
+            <picture>
+              <source srcset="./assets/images/common/footer_logo.webp" type="image/webp">
+              <img src="./assets/images/common/footer_logo.png" alt="">
+            </picture>
+          </div>
+          <p class="p-header__nav__copy"><small>COPYRIGHT &copy;  MICHIO SHOP CO.,LTD. ALL RIGHTS RESERVED.</small></p>
+          <div class="p-header__nav__btn">
+            <a class="p-header__nav__link" href="">ENTRY</a>
+          </div>
+        </div>
+      </nav>
+      <div id="js-menu" class="p-header__menu_btn_wrapper u-hidden-pc">
+        <button id="js-menu_btn" type="button" class="p-header__menu_btn">
+          <span class="p-header__menu_btn_line"></span>
+          <span class="p-header__menu_btn_line"></span>
+          <span class="p-header__menu_btn_text">MENU</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="p-main">
+    <section class="p-crosstalk__fv">
+      <div class="l-inner-sm l-inner-sm__sp">
+        <div class="c-breadcrumb">
+          <ul class="c-breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li class="c-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a class="c-breadcrumb__link" href="./" itemid="" itemscope itemtype="https://schema.org/Thing" itemprop="item">
+                <span itemprop="name"><i>TOP</i></span>
+              </a>
+              <meta itemprop="position" content="1">
+            </li>
+            <li class="c-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+              <span itemprop="name"><i>CAREER</i></span>
+              <meta itemprop="position" content="2" />
+            </li>
+          </ul>
+        </div>
+        <h2 class="c-title"><span class="c-title-red">キャリア</span>を知る</h2>
+      </div>
+      <div class="l-inner-sm p-crosstalk__fv__inner">
+        <p class="p-crosstalk__fv__text">20代、30代の若手が活躍する<br class="u-hidden-pc">インターネット事業部は、<br class="u-hidden-pc">キャリアアップもスピーディー！<br>
+          少数精鋭なので、自分に合ったポストを<br class="u-hidden-pc">イチから作ることもできます。</p>
+      </div>
+    </section>
+    <section class="p-career">
+      <div class="l-inner-sm">
+        <div class="p-career__wrapper">
+          <div class="p-career__sticky">
+            <ul class="p-career__list">
+              <li class="p-career__item" id="js-top_current">
+                <a href="#top">キャリアステップ</a>
+              </li>
+              <li class="p-career__item" id="js-second_current">
+                <a href="#second">研修制度</a>
+              </li>
+              <li class="u-hidden-pc" id="js-third_current">
+              </li>
+            </ul>
+          </div>
+          <div class="p-career__box">
+            <div id="top" class="p-career__content">
+              <h3 class="c-heading l-inner-sm__sp text-red p-crosstalk__heading">
+                <img class="c-heading__svg" src="./assets/images/top/icon-red.svg" alt="">
+                <i>CAREER</i>
+              </h3>
+              <h4 class="p-career__content__title">キャリアステップ</h4>
+              <div class="p-career__content__wrap">
+                <div class="p-career__arrow__wrap">
+                  <img class="p-career__arrow u-hidden-sp" src="./assets/images/career/arrow_bottom.svg" alt="">
+                  <img class="p-career__arrow u-hidden-pc" src="./assets/images/career/arrow_bottom_sp.svg" alt="">
+                </div>
+                <div class="p-career__flow">
+                  <div class="p-career__flow__box">
+                    <div class="p-career__flow__box__wrap">
+                      <p class="p-career__flow__num">入社1年目</p>
+                      <p class="p-career__flow__title">EC販売のイロハを習得</p>
+                    </div>
+                    <div class="p-career__flow__text">まずは研修として半年ほど、物流チームで出荷作業を体験。商品の注文から出荷されるまでのひと通りの流れを覚えていきます。その後、インターネット事業部で電話・メールの問合せや受注対応からスタートして、徐々に商品の出品作業もマスターしていきます。</div>
+                  </div>
+                  <div class="p-career__flow__box">
+                    <div class="p-career__flow__box__wrap">
+                      <p class="p-career__flow__num">入社2〜3年目</p>
+                      <p class="p-career__flow__title">サイトリーダー</p>
+                    </div>
+                    <div class="p-career__flow__text">Yahoo、楽天、アマゾンなど、それぞれのサイトのリーダーを目指していきます。サイトはチームごとに担当しているので、チームのリーダーとして売上の進捗を管理したり、メンバーのフォローなどを行いながら、より良いサイトへとブラッシュアップしていきます。</div>
+                  </div>
+                  <div class="p-career__flow__box">
+                    <div class="p-career__flow__box__wrap">
+                      <p class="p-career__flow__num">入社5年目</p>
+                      <p class="p-career__flow__title">専門職 or マネジメント職</p>
+                    </div>
+                    <div class="p-career__flow__text">EC販売のキーでもある商品の出品に特化した専門スキルを磨いていくか、マネジメント職としてチーム全体を見ながら年間の販売戦略を企画していくか、ご自身の希望でキャリアの道も選べます。</div>
+                  </div>
+                  <div class="p-career__flow__box">
+                    <div class="p-career__flow__box__wrap">
+                      <p class="p-career__flow__num">入社8年目以降</p>
+                      <p class="p-career__flow__title">役員（部長クラス）or バイヤー<span class="p-career__flow__title-sm">など</span></p>
+                    </div>
+                    <div class="p-career__flow__text">インターネット事業部のトップとして、会社全体を動かしていくポジションでの活躍を期待しています。仕入れをメインにメーカーともやり取りをしながら商品を企画していくバイヤーとしても活躍できます。</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="second" class="p-career__content2">
+              <h3 class="c-heading l-inner-sm__sp text-red p-crosstalk__heading">
+                <img class="c-heading__svg" src="./assets/images/top/icon-red.svg" alt="">
+                <i>TRAINING</i>
+              </h3>
+              <h4 class="p-career__content__title">研修制度</h4>
+              <div class="p-career__content2__wrap">
+                <div class="p-career__content2__head">
+                  <p class="p-career__content2__sub"><span class="c-title-red">基本の</span>研修</p>
+                  <p class="p-career__content2__text">
+                    入社してからの半年間は色々な部署を<br class="u-hidden-pc">回って仕事をしてもらいます。<br>
+                    下記が狙いとなります。<br class="u-hidden-pc">また、半年間の間に色々な研修も行います。
+                  </p>
+                  <div class="p-career__content2__body">
+                    <div class="p-career__content2__flex">
+                      <div class="p-career__content2__circle">
+                        <p class="p-career__content2__circle__title">その1</p>
+                        <p class="p-career__content2__circle__text">会社に<br>慣れること</p>
+                      </div>
+                      <div class="p-career__content2__circle">
+                        <p class="p-career__content2__circle__title">その2</p>
+                        <p class="p-career__content2__circle__text">仕事や商品への<br>理解を深めて<br>もらうこと</p>
+                      </div>
+                      <div class="p-career__content2__circle">
+                        <p class="p-career__content2__circle__title">その3</p>
+                        <p class="p-career__content2__circle__text">多くのスタッフと<br>コミュニケーション<br>をとること</p>
+                      </div>
+                    </div>
+                    <div class="l-inner-sm__sp">
+                      <table class="p-table">
+                        <tbody class="p-table__body">
+                          <tr class="p-table__body__tr">
+                            <th class="p-table__body__th">PC研修</th>
+                            <td class="p-table__body__td">EXCEL、WORDの基本的な操作から、専門的なPC操作まで。<br>
+                              外部から講師を招いて研修を行います。研修終了後には専門資格の取得もしてもらいます。</td>
+                          </tr>
+                          <tr class="p-table__body__tr">
+                            <th class="p-table__body__th">社長研修</th>
+                            <td class="p-table__body__td">直接、会社の代表から話を聞いてミチオショップについて理解を深めます。</td>
+                          </tr>
+                          <tr class="p-table__body__tr">
+                            <th class="p-table__body__th">マナー研修</th>
+                            <td class="p-table__body__td">マナー講師を招き、社会人に必要なマナーを学びます。</td>
+                          </tr>
+                          <tr class="p-table__body__tr">
+                            <th class="p-table__body__th">梱包研修</th>
+                            <td class="p-table__body__td">商品を発送する際に必要な梱包作業を通して、商品に対する知識を深めます。</td>
+                          </tr>
+                          <tr class="p-table__body__tr">
+                            <th class="p-table__body__th">社員研修</th>
+                            <td class="p-table__body__td">正社員全員から仕事内容についての研修を行います。授業方式をとることで、社会人になったばかりの人にもわかりやすい、親しみやすい研修となっています。</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="third"></div>
+            <div id="last" class="p-career__btn__wrap" >
+              <a class="p-career__btn" target="_blank" href="./assets/images/pdf/研修制度チラシ_02.pdf">
+                <span class="p-career__btn__text">自社制作チラシで見る</span>
+                <span class="p-career__btn__pdf">PDF</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="p-footer">
+    <div class="p-footer__inner l-inner">
+      <div class="p-footer__btn">
+        <a class="p-footer__btn__link" href="">ENTRY</a>
+      </div>
+      <nav class="p-footer__nav">
+        <ul class="p-footer__lists">
+          <li class="p-footer__list"><a href="company.html"><i>COMPANY</i><span class="p-footer__list-ja u-hidden-pc">会社情報</span></a></li>
+          <li class="p-footer__list"><a href="human&works.html"><i>WORKS & HUMAN</i><span class="p-footer__list-ja u-hidden-pc">人と仕事を知る</span></a></li>
+          <li class="p-footer__list"><a href="special.html"><i>SPECIAL CONTENT</i><span class="p-footer__list-ja u-hidden-pc">しくじりリスト</span></a></li>
+          <li class="p-footer__list"><a href="career.html"><i>CAREER</i><span class="p-footer__list-ja u-hidden-pc">キャリアを知る</span></a></li>
+          <li class="p-footer__list"><a href="recruit.html"><i>RECRUIT</i><span class="p-footer__list-ja u-hidden-pc">採用情報</span></a></li>
+        </ul>
+      </nav>
+      <a class="p-footer__logo" href="./">
+        <picture>
+          <source srcset="./assets/images/common/footer_logo.webp" media="(max-width: 768px)" type="image/webp">
+          <source srcset="./assets/images/common/footer_logo.png" media="(max-width: 768px)" type="image/webp">
+          <source srcset="./assets/images/common/footer_logo.webp" media="(min-width: 769px)" type="image/webp">
+          <img src="./assets/images/common/footer_logo.png" alt="">
+        </picture>
+      </a>
+      <p class="p-footer__copy"><small>COPYRIGHT &copy;  MICHIO SHOP CO.,LTD. ALL RIGHTS RESERVED.</small></p>
+    </div>
+  </footer>
+  <!-- JavaScript -->
+  <script src="./assets/js/script.js?ver=8135459498"></script>
+  <script src="./assets/js/currentScroll.js?ver=8135459498"></script>
+</body>
+
+</html>

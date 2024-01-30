@@ -1,0 +1,132 @@
+@use "global" as *;
+
+.p-comapny__history__inner {
+  margin-top: get-pc-vw(190);
+
+  @include mq(md) {
+    margin-top: get-sp-vw(95);
+  }
+}
+
+.p-comapny__history__list {
+  counter-reset: number 0;
+}
+
+.p-comapny__history__item {
+  display: flex;
+  position: relative;
+  margin-bottom: get-pc-vw(170);
+
+  @include mq(md) {
+    margin-bottom: get-sp-vw(105);
+  }
+
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @include mq(md) {
+    flex-direction: column;
+  }
+
+  &::before {
+    position: absolute;
+    counter-increment: number 1;
+    content: "0" counter(number) ;
+    font-size: get-pc-vw(400);
+    font-family: $sub-font-family;
+    top: get-pc-vw(-208);
+    left: get-pc-vw(-120);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.1;
+    letter-spacing: 0.06em;
+
+    @include mq(md) {
+      font-size: get-sp-vw(200);
+      top: get-sp-vw(-100);
+      left: get-sp-vw(-40);
+    }
+  }
+}
+
+.p-comapny__history__content {
+  width: 53%;
+  padding-right: get-pc-vw(70);
+
+  @include mq(md) {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+.p-comapny__history__wrap {
+  width: 47%;
+
+  @include mq(md) {
+    width: 100%;
+    margin-top: get-sp-vw(25);
+  }
+}
+
+.p-comapny__history__head{
+  margin-left: get-pc-vw(13);
+}
+
+.p-comapny__history__head-ja {
+  font-size: get-pc-vw(90);
+  color: $base-color;
+  font-family: $sub-font-family;
+  margin-top: get-pc-vw(20);
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+
+  @include mq(md) {
+    font-size: get-sp-vw(40);
+  }
+}
+
+.p-comapny__history__head-sm {
+  vertical-align: middle;
+  font-size: get-pc-vw(28);
+  margin-left: get-pc-vw(20);
+  letter-spacing: 0;
+
+  @include mq(md) {
+    display: block;
+    font-size: get-sp-vw(20);
+    margin-top: get-sp-vw(13);
+  }
+}
+
+.p-comapny__history__body {
+  margin-left: get-pc-vw(13);
+}
+
+.p-comapny__history__sub {
+  font-size: get-pc-vw(36);
+  font-weight: 900;
+  line-height: 1.4;
+  margin-top: get-pc-vw(20);
+
+  @include mq(md) {
+    font-size: get-sp-vw(24);
+    line-height: 1.6;
+    margin-top: get-sp-vw(20);
+  }
+}
+
+.p-comapny__history__text {
+  margin-top: get-pc-vw(16);
+  line-height: 1.9;
+  margin-top: get-pc-vw(25);
+
+  @include mq(md) {
+    margin-top: get-sp-vw(16);
+    font-size: get-sp-vw(13);
+    line-height: 1.9;
+  }
+
+}

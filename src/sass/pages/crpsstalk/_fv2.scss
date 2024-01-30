@@ -1,0 +1,90 @@
+@use "global" as *;
+
+.p-crosstalk__fv {
+  padding-top: get-pc-vw(70);
+
+  @include mq(md) {
+    padding-top: get-sp-vw(30);
+  }
+}
+
+.p-crosstalk__fv__inner {
+  @include mq(md) {
+    max-width: get-sp-vw(353);
+  }
+}
+
+.p-crosstalk__fv__text {
+  margin-top: get-pc-vw(35);
+  line-height: 1.9;
+
+  @include mq(md) {
+    margin-top: get-sp-vw(20);
+    margin-left: get-sp-vw(10);
+    line-height: 1.85;
+    letter-spacing: -0.02em;
+  }
+}
+
+.p-crosstalk__fv__wrap {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "01";
+    font-size: get-pc-vw(110);
+    font-family: $sub-font-family;
+    color: $base-color;
+    right: get-pc-vw(45);
+    top: get-pc-vw(-65);
+    z-index: 1;
+    letter-spacing: 0.06em;
+
+    @include mq(md) {
+      font-size: get-sp-vw(60);
+      top: get-sp-vw(0);
+      right: get-sp-vw(8);
+      letter-spacing: 0;
+    }
+  }
+
+  &.p-crosstalk__fv__02 {
+    &::before {
+      content: "02";
+
+    }
+  }
+
+  &.p-crosstalk__fv__03 {
+    &::before {
+      content: "03";
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "CROSSTALK";
+    font-size: get-pc-vw(30);
+    font-family: $sub-font-family;
+    color: $base-color;
+    right: get-pc-vw(50);
+    top: get-pc-vw(-90);
+    z-index: 1;
+    letter-spacing: 0.06em;
+
+    @include mq(md) {
+      font-size: get-sp-vw(16);
+      top: get-sp-vw(-8);
+      right: get-sp-vw(8);
+      letter-spacing: 0.01em;
+    }
+  }
+}
+
+.p-crosstalk__fv__img {
+  margin-top: get-pc-vw(60);
+
+  @include mq(md) {
+    padding-top: get-pc-vw(40);
+  }
+}

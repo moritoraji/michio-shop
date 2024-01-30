@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>採用情報</title>
+  <meta name="description" content="コンポーネントリストの概要です" />
+  <!-- ogp -->
+  <meta property="og:title" content="コンポーネント" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com" />
+  <meta property="og:image" content="https://example.com/images/common/ogp.jpg" />
+  <meta property="og:site_name" content="コンポーネント" />
+  <meta property="og:description" content="コンポーネントリストの概要です" />
+  <!-- twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="コンポーネントリストの概要です" />
+  <meta name="twitter:title" content="コンポーネント" />
+  <meta name="twitter:image" content="https://example.com/images/common/ogp.jpg" />
+  <!-- icon -->
+  <link rel="icon" href="./assets/images/common/icon-16x16.png" sizes="16x16" type="image/png" />
+  <link rel="apple-touch-icon" href="./assets/images/common/apple-touch-icon-152x152.png" />
+
+  <!-- googlefonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+
+
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/style.css?ver=8135459498" />
+</head>
+
+<body>
+  <header class="p-header l-header" id="js-header">
+    <div class="p-header__inner l-inner">
+      <div class="p-header__logo">
+        <h1 class="p-header__logo">
+          <a class="p-header__link" href="./">
+            ロゴ
+            <picture>
+              <source srcset="./assets/images/common/logo.webp" type="image/webp" width="180" height="50">
+              <img src="./assets/images/common/logo.png" alt="" decoding="async" width="180" height="50">
+            </picture>
+          </a>
+        </h1>
+      </div>
+      <nav class="p-header__nav">
+        <ul class="p-header__lists">
+          <li class="p-header__list"><a href="company.html"><i>COMPANY</i></a></li>
+          <li class="p-header__list"><a href="human&works.html"><i>WORKS & HUMAN</i></a></li>
+          <li class="p-header__list"><a href="special.html"><i>SPECIAL CONTENT</i></a></li>
+          <li class="p-header__list"><a href="career.html"><i>CAREER</i></a></li>
+          <li class="p-header__list"><a href="recruit.html"><i>RECRUIT</i></a></li>
+          <li class="p-header__entry"><a href="#">ENTRY</a></li>
+        </ul>
+      </nav>
+      <nav id="js-nav" class="p-header__nav_sp">
+        <div class="p-header__nav_scroll">
+          <div class="p-header__nav__logo">
+            <picture>
+              <source srcset="./assets/images/common/logo_nav.webp" type="image/webp" width="180" height="50">
+              <img src="./assets/images/common/logo_nav.png" alt="" decoding="async" width="180" height="50">
+            </picture>
+          </div>
+          <ul class="p-header__lists_sp">
+            <li class="p-header__list_sp"><a href="company.html"><i>COMPANY</i><span class="p-header__list-ja u-hidden-pc">会社情報</span></a></li>
+            <li class="p-header__list_sp"><a href="human&works.html"><i>WORKS & HUMAN</i><span class="p-header__list-ja u-hidden-pc">人と仕事を知る</span></a></li>
+            <li class="p-header__list_sp"><a href="special.html"><i>SPECIAL</i><span class="p-header__list-ja u-hidden-pc">しくじりリスト</span></a></li>
+            <li class="p-header__list_sp"><a href="career.html"><i>CAREER</i><span class="p-header__list-ja u-hidden-pc">キャリアを知る</span></a></li>
+            <li class="p-header__list_sp"><a href="recruit.html"><i>RECRUIT</i><span class="p-header__list-ja u-hidden-pc">採用情報</span></a></li>
+          </ul>
+          <div class="p-header__nav__logo2" >
+            <picture>
+              <source srcset="./assets/images/common/footer_logo.webp" type="image/webp">
+              <img src="./assets/images/common/footer_logo.png" alt="">
+            </picture>
+          </div>
+          <p class="p-header__nav__copy"><small>COPYRIGHT &copy;  MICHIO SHOP CO.,LTD. ALL RIGHTS RESERVED.</small></p>
+          <div class="p-header__nav__btn">
+            <a class="p-header__nav__link" href="">ENTRY</a>
+          </div>
+        </div>
+      </nav>
+      <div id="js-menu" class="p-header__menu_btn_wrapper u-hidden-pc">
+        <button id="js-menu_btn" type="button" class="p-header__menu_btn">
+          <span class="p-header__menu_btn_line"></span>
+          <span class="p-header__menu_btn_line"></span>
+          <span class="p-header__menu_btn_text">MENU</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="p-main">
+    <section class="p-crosstalk__fv">
+      <div class="l-inner-sm l-inner-sm__sp">
+        <div class="c-breadcrumb">
+          <ul class="c-breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li class="c-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a class="c-breadcrumb__link" href="./" itemid="" itemscope itemtype="https://schema.org/Thing" itemprop="item">
+                <span itemprop="name"><i>TOP</i></span>
+              </a>
+              <meta itemprop="position" content="1">
+            </li>
+            <li class="c-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+              <span itemprop="name"><i>RECRUIT</i></span>
+              <meta itemprop="position" content="2" />
+            </li>
+          </ul>
+        </div>
+        <h2 class="c-title"><span class="c-title-red">採用</span>情報</h2>
+      </div>
+    </section>
+    <section class="p-recruit">
+      <div class="l-inner-sm">
+        <div class="p-recruit__wrapper">
+          <div class="p-recruit__sticky">
+            <ul class="p-recruit__list">
+              <li class="p-recruit__item" id="js-top_current">
+                <a href="#top">よくあるご質問</a>
+              </li>
+              <li class="p-recruit__item" id="js-second_current">
+                <a href="#second">福利厚生</a>
+              </li>
+              <li class="p-recruit__item" id="js-third_current">
+                <a href="#third">募集要項</a>
+              </li>
+            </ul>
+          </div>
+          <div class="p-recruit__box">
+            <div id="top" class="p-recruit__content">
+              <h3 class="c-heading l-inner-sm__sp text-red p-crosstalk__heading">
+                <img class="c-heading__svg" src="./assets/images/top/icon-red.svg" alt="">
+                <i>FAQ</i>
+              </h3>
+              <h4 class="p-recruit__content__title">よくあるご質問</h4>
+              <div class="p-recruit__faq">
+                <div class="p-recruit__inner">
+                  <div class="p-recruit__inner__content">
+                    <div class="p-recruit__inner__block">
+                      <div class="block-q js-accordion">
+                        <img  src="./assets/images/recruit/recruit_faq.svg" alt="">
+                        <p class="block-p">新入社員研修について教えてください。</p>
+                      </div>
+                      <div class="block-a">
+                        <p class="block-p">ＰＣ研修・マナー研修・社長研修・梱包研修・社員研修等たくさんの研修制度を設けています。会社に慣れ、理解を深めてもらい、コミュニケ―ションをとることを目的としています。</p>
+                      </div>
+                    </div>
+                    <div class="p-recruit__inner__block">
+                      <div class="block-q js-accordion">
+                        <img  src="./assets/images/recruit/recruit_faq.svg" alt="">
+                        <p class="block-p">残業はありますか</p>
+                      </div>
+                      <div class="block-a">
+                        <p class="block-p">
+                          残業時間は繁忙期・閑散期によって異なります。しかし、繁忙期には他部署が手伝うなど会社全体で早く仕事を終わらせられるような取り組みを行っています。<br>
+                          残業代は１分単位で付きますのでご安心ください。</p>
+                      </div>
+                    </div>
+                    <div class="p-recruit__inner__block">
+                      <div class="block-q js-accordion">
+                        <img  src="./assets/images/recruit/recruit_faq.svg" alt="">
+                        <p class="block-p">転勤はありますか</p>
+                      </div>
+                      <div class="block-a">
+                        <p class="block-p">
+                          転勤はありません。</p>
+                      </div>
+                    </div>
+                    <div class="p-recruit__inner__block">
+                      <div class="block-q js-accordion">
+                        <img  src="./assets/images/recruit/recruit_faq.svg" alt="">
+                        <p class="block-p">求められる能力・スキルはありますか</p>
+                      </div>
+                      <div class="block-a">
+                        <p class="block-p">
+                          必須条件となる能力・スキルはありません。<br>
+                          「決められた仕事を遂行できる」人物よりも、「組織目標を達成するために、自身は何ができるかを柔軟な思考と広い視野で考え実行できる」人物を求めています。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="p-recruit__faq__btn" target="_blank" href="./assets/images/pdf/アンケートチラシ.pdf">
+                    <span class="p-recruit__btn__text">ミチオショップってどういう会社？<span class="p-recruit__btn__text-black"><br class="u-hidden-pc">のアンケートを見る</span></span>
+                    <span class="p-recruit__btn__pdf">PDF</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div id="second" class="p-recruit__content2">
+              <h3 class="c-heading l-inner-sm__sp text-red p-crosstalk__heading">
+                <img class="c-heading__svg" src="./assets/images/top/icon-red.svg" alt="">
+                <i>WELFARE</i>
+              </h3>
+              <h4 class="p-recruit__content__title">福利厚生</h4>
+              <div class="p-recruit__content2__wrap">
+                <div class="p-recruit__content2__head">
+                  <p class="p-recruit__content2__sub"><span class="c-title-red">基本の</span>福利厚生</p>
+                </div>
+                <div class="p-recruit__content2__flex">
+                  <picture class="p-recruit__content2__img">
+                    <source srcset="./assets/images/recruit/welfare_01.webp" media="(max-width: 768px)" type="image/webp">
+                    <source srcset="./assets/images/recruit/welfare_01.jpg" media="(max-width: 768px)" type="image/jpg">
+                    <source srcset="./assets/images/recruit/welfare_01.webp" media="(min-width: 769px)" type="image/webp">
+                    <img src="./assets/images/recruit/welfare_01.jpg" alt="">
+                  </picture>
+                  <picture class="p-recruit__content2__img">
+                    <source srcset="./assets/images/recruit/welfare_02.webp" media="(max-width: 768px)" type="image/webp">
+                    <source srcset="./assets/images/recruit/welfare_02.jpg" media="(max-width: 768px)" type="image/jpg">
+                    <source srcset="./assets/images/recruit/welfare_02.webp" media="(min-width: 769px)" type="image/webp">
+                    <img src="./assets/images/recruit/welfare_02.jpg" alt="">
+                  </picture>
+                  <picture class="p-recruit__content2__img">
+                    <source srcset="./assets/images/recruit/welfare_03.webp" media="(max-width: 768px)" type="image/webp">
+                    <source srcset="./assets/images/recruit/welfare_03.jpg" media="(max-width: 768px)" type="image/jpg">
+                    <source srcset="./assets/images/recruit/welfare_03.webp" media="(min-width: 769px)" type="image/webp">
+                    <img src="./assets/images/recruit/welfare_03.jpg" alt="">
+                  </picture>
+                  <picture class="p-recruit__content2__img">
+                    <source srcset="./assets/images/recruit/welfare_04.webp" media="(max-width: 768px)" type="image/webp">
+                    <source srcset="./assets/images/recruit/welfare_04.jpg" media="(max-width: 768px)" type="image/jpg">
+                    <source srcset="./assets/images/recruit/welfare_04.webp" media="(min-width: 769px)" type="image/webp">
+                    <img src="./assets/images/recruit/welfare_04.jpg" alt="">
+                  </picture>
+                  <picture class="p-recruit__content2__img">
+                    <source srcset="./assets/images/recruit/welfare_05.webp" media="(max-width: 768px)" type="image/webp">
+                    <source srcset="./assets/images/recruit/welfare_05.jpg" media="(max-width: 768px)" type="image/jpg">
+                    <source srcset="./assets/images/recruit/welfare_05.webp" media="(min-width: 769px)" type="image/webp">
+                    <img src="./assets/images/recruit/welfare_05.jpg" alt="">
+                  </picture>
+                  <picture class="p-recruit__content2__img">
+                    <source srcset="./assets/images/recruit/welfare_06.webp" media="(max-width: 768px)" type="image/webp">
+                    <source srcset="./assets/images/recruit/welfare_06.jpg" media="(max-width: 768px)" type="image/jpg">
+                    <source srcset="./assets/images/recruit/welfare_06.webp" media="(min-width: 769px)" type="image/webp">
+                    <img src="./assets/images/recruit/welfare_06.jpg" alt="">
+                  </picture>
+                </div>
+                <div class="l-inner-sm__sp p-recruit__table">
+                  <table class="p-table">
+                    <tbody class="p-table__body">
+                      <tr class="p-table__body__tr">
+                        <th class="p-table__body__th">誕生日祝制度</th>
+                        <td class="p-table__body__td">月に一度全体の会議の場でお祝いをしてプレゼントを贈呈します。また手当として10,000円を支給し、産み育ててくれた両親や家族・親しい友人へプレゼントを渡してもらうようにしています。</td>
+                      </tr>
+                      <tr class="p-table__body__tr">
+                        <th class="p-table__body__th">健康手当</th>
+                        <td class="p-table__body__td">健康診断の結果によって毎年6月に手当を支給します。</td>
+                      </tr>
+                      <tr class="p-table__body__tr">
+                        <th class="p-table__body__th">禁煙手当</th>
+                        <td class="p-table__body__td">タバコを吸わない人、辞めた人には毎年6月に手当を支給します。</td>
+                      </tr>
+                      <tr class="p-table__body__tr">
+                        <th class="p-table__body__th">結婚祝金</th>
+                        <td class="p-table__body__td">結婚する人には100,000円の祝い金を支給します。</td>
+                      </tr>
+                      <tr class="p-table__body__tr">
+                        <th class="p-table__body__th">出産祝金</th>
+                        <td class="p-table__body__td">子どもが生まれたら50,000円の祝い金を支給します。</td>
+                      </tr>
+                      <tr class="p-table__body__tr">
+                        <th class="p-table__body__th">フリードリンク・<br>
+                          アイス制度</th>
+                        <td class="p-table__body__td">熱中症対策として6～8月は飲み物・アイスが食べ放題になっています。</td>
+                      </tr>
+                      <tr class="p-table__body__tr">
+                        <th class="p-table__body__th">賞金・賞品付き<br>
+                          ゲームありの懇親会</th>
+                        <td class="p-table__body__td">年に２回の懇親会は、二次会費から帰りのタクシー・代行料金まですべて会社負担です。</td>
+                      </tr>
+                      <tr class="p-table__body__tr">
+                        <th class="p-table__body__th">表彰制度</th>
+                        <td class="p-table__body__td">年に一度、頑張ったスタッフには社長賞など表彰があります。<br>
+                          ※繁忙期を除く</td>
+                      </tr>
+                      <tr class="p-table__body__tr">
+                        <th class="p-table__body__th">ノー残業デー</th>
+                        <td class="p-table__body__td">毎週金曜はノー残業デーとしています。<br>※繁忙期を除く</td>
+                      </tr>
+                      <tr class="p-table__body__tr">
+                        <th class="p-table__body__th">各種資格取得<br class="u-hidden-sp">
+                          制度</th>
+                        <td class="p-table__body__td">部署ごとにあった資格の取得を費用面で応援します。</td>
+                      </tr>
+                      <tr class="p-table__body__tr">
+                        <th class="p-table__body__th">資格手当</th>
+                        <td class="p-table__body__td">会社指定の資格を手当を取得すれば手当を支給します。</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="p-recruit__content2__text">※2024年1月現在の福利厚生です。<br>
+                  毎年新しい福利厚生を追加したり、人気のないものは廃止になることもあります。</p>
+                <div class="p-recruit__btn__wrap">
+                  <a class="p-career__btn" target="_blank" href="./assets/images/pdf/福利厚生チラシ.pdf">
+                    <span class="p-career__btn__text">自社制作チラシで見る</span>
+                    <span class="p-career__btn__pdf">PDF</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div id="third" class="p-recruit__content3">
+              <h3 class="c-heading l-inner-sm__sp text-red p-crosstalk__heading">
+                <img class="c-heading__svg" src="./assets/images/top/icon-red.svg" alt="">
+                <i>RECRUIT</i>
+              </h3>
+              <h4 class="p-recruit__content__title">募集要項</h4>
+              <div class="l-inner-sm__sp p-recruit__table2">
+                <table class="p-table2">
+                  <tbody class="p-table2__body">
+                    <tr class="p-table2__body__tr">
+                      <th class="p-table2__body__th">募集職種</th>
+                      <td class="p-table2__body__td">
+                        事務職（WEBデザイナー・アパレルECサイト運営）<br>
+                        社員のほとんどが未経からのスタート！<br>
+                        自社ECサイト・大手通販サイトの運営をしていただきます。
+                      </td>
+                    </tr>
+                    <tr class="p-table2__body__tr">
+                      <th class="p-table2__body__th">配属職種</th>
+                      <td class="p-table2__body__td">
+                        事務職（WEBデザイナー・アパレルECサイト運営）<br>
+                      ・ 商品ページの作成・更新<br>
+                      ・ バナーなどの制作<br>
+                      ・ 受注した商品の管理・発送準備<br>
+                      ・ 問合せ対応（電話・メール）　　　　など
+                      </td>
+                    </tr>
+                    <tr class="p-table2__body__tr">
+                      <th class="p-table2__body__th">募集対象</th>
+                      <td class="p-table2__body__td">理系大学院生／理系学部生／文系大学院生／文系学部生／既卒者</td>
+                    </tr>
+                    <tr class="p-table2__body__tr">
+                      <th class="p-table2__body__th">初任給</th>
+                      <td class="p-table2__body__td">大学卒　200,000円</td>
+                    </tr>
+                    <tr class="p-table2__body__tr">
+                      <th class="p-table2__body__th">諸手当</th>
+                      <td class="p-table2__body__td">通勤手当／資格手当／皆勤手当／誕生日手当／健康手当／禁煙手当</td>
+                    </tr>
+                    <tr class="p-table2__body__tr">
+                      <th class="p-table2__body__th">昇給</th>
+                      <td class="p-table2__body__td">年1回（6月）</td>
+                    </tr>
+                    <tr class="p-table2__body__tr">
+                      <th class="p-table2__body__th">賞与</th>
+                      <td class="p-table2__body__td">年2回（6月・12月）</td>
+                    </tr>
+                    <tr class="p-table2__body__tr">
+                      <th class="p-table2__body__th">年間休日</th>
+                      <td class="p-table2__body__td">105日</td>
+                    </tr>
+                    <tr class="p-table2__body__tr">
+                      <th class="p-table2__body__th">休日休暇</th>
+                      <td class="p-table2__body__td">週休2日制（日曜日・祝日＋ほか2～3日）</td>
+                    </tr>
+                    <tr class="p-table2__body__tr">
+                      <th class="p-table2__body__th">待遇・福利厚生・社内制度</th>
+                      <td class="p-table2__body__td">
+                        社会保険完備・退職金制度・マイカー通勤可・定期健康診断・制服支給<br>
+                        ・育休、産休制度・結婚祝い金・出産祝い金・フリードリンク・アイス制度<br>
+                        ・表彰制度・各種資格取得制度・賞金、商品付ゲーム有の懇親会・誕生日祝い制度</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div id="last"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="p-footer">
+    <div class="p-footer__inner l-inner">
+      <div class="p-footer__btn">
+        <a class="p-footer__btn__link" href="">ENTRY</a>
+      </div>
+      <nav class="p-footer__nav">
+        <ul class="p-footer__lists">
+          <li class="p-footer__list"><a href="company.html"><i>COMPANY</i><span class="p-footer__list-ja u-hidden-pc">会社情報</span></a></li>
+          <li class="p-footer__list"><a href="human&works.html"><i>WORKS & HUMAN</i><span class="p-footer__list-ja u-hidden-pc">人と仕事を知る</span></a></li>
+          <li class="p-footer__list"><a href="special.html"><i>SPECIAL CONTENT</i><span class="p-footer__list-ja u-hidden-pc">しくじりリスト</span></a></li>
+          <li class="p-footer__list"><a href="career.html"><i>CAREER</i><span class="p-footer__list-ja u-hidden-pc">キャリアを知る</span></a></li>
+          <li class="p-footer__list"><a href="recruit.html"><i>RECRUIT</i><span class="p-footer__list-ja u-hidden-pc">採用情報</span></a></li>
+        </ul>
+      </nav>
+      <a class="p-footer__logo" href="./">
+        <picture>
+          <source srcset="./assets/images/common/footer_logo.webp" media="(max-width: 768px)" type="image/webp">
+          <source srcset="./assets/images/common/footer_logo.png" media="(max-width: 768px)" type="image/webp">
+          <source srcset="./assets/images/common/footer_logo.webp" media="(min-width: 769px)" type="image/webp">
+          <img src="./assets/images/common/footer_logo.png" alt="">
+        </picture>
+      </a>
+      <p class="p-footer__copy"><small>COPYRIGHT &copy;  MICHIO SHOP CO.,LTD. ALL RIGHTS RESERVED.</small></p>
+    </div>
+  </footer>
+  <!-- JavaScript -->
+  <script src="./assets/js/script.js?ver=8135459498"></script>
+  <script src="./assets/js/currentScroll.js?ver=8135459498"></script>
+</body>
+
+</html>

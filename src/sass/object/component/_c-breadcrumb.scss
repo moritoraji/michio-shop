@@ -1,0 +1,51 @@
+@use "global" as *;
+
+.c-breadcrumb__list {
+  display: flex;
+}
+
+.c-breadcrumb__item {
+  font-weight: 400;
+  font-family: $sub-font-family;
+  font-size: get-pc-vw(17);
+  margin-right: get-pc-vw(30);
+  color: $black;
+  letter-spacing: 0.08em;
+  position: relative;
+
+  @include mq(md) {
+    font-size: get-sp-vw(10);
+    margin-right: get-sp-vw(20);
+  }
+
+  &:first-of-type::before {
+    display: none;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: get-pc-vw(5);
+    height: get-pc-vw(5);
+    top: 50%;
+    transform: translateY(-50%);
+    left: get-pc-vw(-20);
+    background-color: $base-color;
+    
+    @include mq(md) {
+      width: get-sp-vw(5);
+      height: get-sp-vw(5);
+      left: get-sp-vw(-14);
+    }
+  }
+}
+
+.c-breadcrumb__link{
+  color: $black;
+  opacity: .3;
+
+}

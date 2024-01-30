@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>人と仕事を知る</title>
+  <meta name="description" content="コンポーネントリストの概要です" />
+  <!-- ogp -->
+  <meta property="og:title" content="コンポーネント" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com" />
+  <meta property="og:image" content="https://example.com/images/common/ogp.jpg" />
+  <meta property="og:site_name" content="コンポーネント" />
+  <meta property="og:description" content="コンポーネントリストの概要です" />
+  <!-- twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="コンポーネントリストの概要です" />
+  <meta name="twitter:title" content="コンポーネント" />
+  <meta name="twitter:image" content="https://example.com/images/common/ogp.jpg" />
+  <!-- icon -->
+  <link rel="icon" href="./assets/images/common/icon-16x16.png" sizes="16x16" type="image/png" />
+  <link rel="apple-touch-icon" href="./assets/images/common/apple-touch-icon-152x152.png" />
+
+  <!-- googlefonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+
+
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/style.css?ver=8135459498" />
+
+</head>
+
+<body>
+  <header class="p-header l-header" id="js-header">
+    <div class="p-header__inner l-inner">
+      <div class="p-header__logo">
+        <h1 class="p-header__logo">
+          <a class="p-header__link" href="./">
+            ロゴ
+            <picture>
+              <source srcset="./assets/images/common/logo.webp" type="image/webp" width="180" height="50">
+              <img src="./assets/images/common/logo.png" alt="" decoding="async" width="180" height="50">
+            </picture>
+          </a>
+        </h1>
+      </div>
+      <nav class="p-header__nav">
+        <ul class="p-header__lists">
+          <li class="p-header__list"><a href="company.html"><i>COMPANY</i></a></li>
+          <li class="p-header__list"><a href="human&works.html"><i>WORKS & HUMAN</i></a></li>
+          <li class="p-header__list"><a href="special.html"><i>SPECIAL CONTENT</i></a></li>
+          <li class="p-header__list"><a href="career.html"><i>CAREER</i></a></li>
+          <li class="p-header__list"><a href="recruit.html"><i>RECRUIT</i></a></li>
+          <li class="p-header__entry"><a href="#">ENTRY</a></li>
+        </ul>
+      </nav>
+      <nav id="js-nav" class="p-header__nav_sp">
+        <div class="p-header__nav_scroll">
+          <div class="p-header__nav__logo">
+            <picture>
+              <source srcset="./assets/images/common/logo_nav.webp" type="image/webp" width="180" height="50">
+              <img src="./assets/images/common/logo_nav.png" alt="" decoding="async" width="180" height="50">
+            </picture>
+          </div>
+          <ul class="p-header__lists_sp">
+            <li class="p-header__list_sp"><a href="company.html"><i>COMPANY</i><span class="p-header__list-ja u-hidden-pc">会社情報</span></a></li>
+            <li class="p-header__list_sp"><a href="human&works.html"><i>WORKS & HUMAN</i><span class="p-header__list-ja u-hidden-pc">人と仕事を知る</span></a></li>
+            <li class="p-header__list_sp"><a href="special.html"><i>SPECIAL</i><span class="p-header__list-ja u-hidden-pc">しくじりリスト</span></a></li>
+            <li class="p-header__list_sp"><a href="career.html"><i>CAREER</i><span class="p-header__list-ja u-hidden-pc">キャリアを知る</span></a></li>
+            <li class="p-header__list_sp"><a href="recruit.html"><i>RECRUIT</i><span class="p-header__list-ja u-hidden-pc">採用情報</span></a></li>
+          </ul>
+          <div class="p-header__nav__logo2" >
+            <picture>
+              <source srcset="./assets/images/common/footer_logo.webp" type="image/webp">
+              <img src="./assets/images/common/footer_logo.png" alt="">
+            </picture>
+          </div>
+          <p class="p-header__nav__copy"><small>COPYRIGHT &copy;  MICHIO SHOP CO.,LTD. ALL RIGHTS RESERVED.</small></p>
+          <div class="p-header__nav__btn">
+            <a class="p-header__nav__link" href="">ENTRY</a>
+          </div>
+        </div>
+      </nav>
+      <div id="js-menu" class="p-header__menu_btn_wrapper u-hidden-pc">
+        <button id="js-menu_btn" type="button" class="p-header__menu_btn">
+          <span class="p-header__menu_btn_line"></span>
+          <span class="p-header__menu_btn_line"></span>
+          <span class="p-header__menu_btn_text">MENU</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="p-main">
+    <section class="p-crosstalk__fv">
+      <div class="l-inner-sm l-inner-sm__sp">
+        <div class="c-breadcrumb">
+          <ul class="c-breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li class="c-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a class="c-breadcrumb__link" href="./" itemid="" itemscope itemtype="https://schema.org/Thing" itemprop="item">
+                <span itemprop="name"><i>TOP</i></span>
+              </a>
+              <meta itemprop="position" content="1">
+            </li>
+            <li class="c-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+              <span itemprop="name"><i>HUMAN & WORKS</i></span>
+              <meta itemprop="position" content="2" />
+            </li>
+          </ul>
+        </div>
+        <h2 class="c-title c-title--sp"><span class="c-title-red">人と仕事</span>を知る</h2>
+      </div>
+      <div class="l-inner-sm p-crosstalk__fv__inner">
+        <p class="p-crosstalk__fv__text">ミチオショップには、アパレルやECサイトに<br class="u-hidden-pc">興味がある人だけでなく、<br>
+          デザイン・アート・アニメ・イラスト好きなど、<br class="u-hidden-pc">実に個性豊かな面々が集まっています。</p>
+      </div>
+    </section>
+    <section class="p-works">
+      <div class="l-inner-sm">
+        <div class="p-works__wrap">
+          <h3 class="c-heading l-inner-sm__sp text-red p-crosstalk__heading">
+            <img class="c-heading__svg" src="./assets/images/top/icon-red.svg" alt="">
+            <i>WORKS</i>
+          </h3>
+          <div class="p-works__flex">
+            <div class="p-works__box">
+              <p class="p-works__sub">ミチオショップの仕事</p>
+              <p class="p-works__sub2">ECサイトごとのチーム制で<br>
+                それぞれ切磋琢磨しています！</p>
+            </div>
+            <div class="p-works__box2">
+              <p class="p-works__text">当社は100年近い歴史のある老舗アパレル商社という過去にしばられることなく、インターネット事業を中心に成長してきました。現在は自社ECサイトと大手通販サイトを合わせて8つのショップを出店し、それぞれチームになってサイトの運営を行っています。ときにはメーカーとコラボしてオリジナルの商品も企画。アシンメトリーのワークウエアなど、まだ世の中にない「初」の商品をテーマに毎年企画しています。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-works__scroll">
+        <!-- <picture class="p-works__img l-inner-sm">
+          <source srcset="./assets/images/works/work_img_01_sp.webp" media="(max-width: 768px)" type="image/webp">
+          <source srcset="./assets/images/works/work_img_01_sp.png" media="(max-width: 768px)" type="image/png">
+          <source srcset="./assets/images/works/work_img_01.webp" media="(min-width: 769px)" type="image/webp">
+          <img src="./assets/images/works/work_img_01.png" alt="">
+        </picture> -->
+        <ul class="p-works__list">
+          <li class="p-works__item">
+            <div class="p-works__item__bg-l-1">
+              <picture class="p-works__circle">
+                <source srcset="./assets/images/works/works_circle.webp" type="image/webp">
+                <img src="./assets/images/works/works_circle.png" alt="">
+              </picture>
+              <picture class="p-works__circle__l">
+                <!-- <source srcset="./assets/images/works/works_circle_l.webp" type="image/webp"> -->
+                <img src="./assets/images/works/works_circle_l.png" alt="">
+              </picture>
+              <div class="p-works__item__wrap">
+                <picture class="p-works__item__img">
+                  <source srcset="./assets/images/works/work_icon_01.webp" type="image/webp">
+                  <img src="./assets/images/works/work_icon_01.png" alt="">
+                </picture>
+                <p class="p-works__item__title"><i>PAGE DESIGN</i></p>
+                <p class="p-works__item__sub">商品ページの<br>
+                  作成・更新</p>
+                <p class="p-works__item__text">EC運営のキーとなるのが、どんなページを作って、どんな商品をラインナップしていくか。季節やイベントに合わせた商品やページ構成で、ユーザーの興味を喚起させていきます。</p>
+              </div>
+            </div>
+
+          </li>
+          <li class="p-works__item">
+            <div class="p-works__item__bg-l-2">
+              <picture class="p-works__circle">
+                <source srcset="./assets/images/works/works_circle.webp" type="image/webp">
+                <img src="./assets/images/works/works_circle.png" alt="">
+              </picture>
+              <picture class="p-works__circle__r">
+                <!-- <source srcset="./assets/images/works/works_circle_r.webp" type="image/webp"> -->
+                <img src="./assets/images/works/works_circle_r.png" alt="">
+              </picture>
+              <div class="p-works__item__wrap">
+                <picture class="p-works__item__img">
+                  <source srcset="./assets/images/works/work_icon_02.webp" type="image/webp">
+                  <img src="./assets/images/works/work_icon_02.png" alt="">
+                </picture>
+                <p class="p-works__item__title"><i>BANNER DESIGN</i></p>
+                <p class="p-works__item__sub">バナーなどの<br>
+                  制作</p>
+                <p class="p-works__item__text">メーカーから支給されるビジュアル素材をもとに、商品やターゲットに合ったデザインでバナーなどを制作。クリックしたくなるような入り口作りをデザインします。</p>
+              </div>
+            </div>
+          </li>
+          <li class="p-works__item">
+            <div class="p-works__item__bg-l-3">
+              <picture class="p-works__circle">
+                <source srcset="./assets/images/works/works_circle.webp" type="image/webp">
+                <img src="./assets/images/works/works_circle.png" alt="">
+              </picture>
+              <picture class="p-works__circle__l">
+                <!-- <source srcset="./assets/images/works/works_circle_l.webp" type="image/webp"> -->
+                <img src="./assets/images/works/works_circle_l.png" alt="">
+              </picture>
+              <div class="p-works__item__wrap">
+                <picture class="p-works__item__img">
+                  <source srcset="./assets/images/works/work_icon_03.webp" type="image/webp">
+                  <img src="./assets/images/works/work_icon_03.png" alt="">
+                </picture>
+                <p class="p-works__item__title"><i>MANAGEMENT</i></p>
+                <p class="p-works__item__sub">受注した商品の<br>
+                  管理・発送準備</p>
+                <p class="p-works__item__text">顧客への注文完了メールの送信や、在庫のチェック（在庫がなければメーカーに発注）、物流メンバーと連携した出荷の準備などを行います。</p>
+              </div>
+            </div>
+          </li>
+          <li class="p-works__item">
+            <div class="p-works__item__bg-l-4">
+              <picture class="p-works__circle">
+                <source srcset="./assets/images/works/works_circle.webp" type="image/webp">
+                <img src="./assets/images/works/works_circle.png" alt="">
+              </picture>
+              <picture class="p-works__circle__r">
+                <!-- <source srcset="./assets/images/works/works_circle_r.webp" type="image/webp"> -->
+                <img src="./assets/images/works/works_circle_r.png" alt="">
+              </picture>
+              <div class="p-works__item__wrap">
+                <picture class="p-works__item__img">
+                  <source srcset="./assets/images/works/work_icon_04.webp" type="image/webp">
+                  <img src="./assets/images/works/work_icon_04.png" alt="">
+                </picture>
+                <p class="p-works__item__title"><i>SUPPORT</i></p>
+                <p class="p-works__item__sub">問合せ対応<br>
+                  （電話・メール）</p>
+                <p class="p-works__item__text">発送日の連絡や質問のやり取りなどを電話やメールで対応します。お礼メールやレビュー投稿の依頼をはじめ、メルマガの配信なども定期的に行っています。</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+    <section class="p-human">
+      <div class="l-inner-sm">
+        <div class="p-human__wrap">
+          <h3 class="c-heading l-inner-sm__sp text-red p-crosstalk__heading">
+            <img class="c-heading__svg" src="./assets/images/top/icon-red.svg" alt="">
+            <i>HUMAN</i>
+          </h3>
+          <div class="p-human__flex">
+            <div class="p-human__box">
+              <p class="p-human__sub">ミチオショップの人</p>
+              <p class="p-human__sub2">チーム、若手、社長対談など<br>
+                さまざまなクロストークを開催！</p>
+            </div>
+            <div class="p-human__box2">
+              <div class="c-breadcrumb">
+                <ul class="c-breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                  <li class="c-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a class="c-breadcrumb__link" href="crosstalk01.html" itemid="" itemscope itemtype="https://schema.org/Thing" itemprop="item">
+                      <span itemprop="name"><i>CROSSTALK 01</i></span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                  </li>
+                  <li class="c-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <a class="c-breadcrumb__link" href="crosstalk02.html" itemid="" itemscope itemtype="https://schema.org/Thing" itemprop="item">
+                      <span itemprop="name"><i>CROSSTALK 02</i></span>
+                    </a>
+                    <meta itemprop="position" content="2" />
+                  </li>
+                  <li class="c-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <a class="c-breadcrumb__link" href="crosstalk03.html" itemid="" itemscope itemtype="https://schema.org/Thing" itemprop="item">
+                      <span itemprop="name"><i>CROSSTALK 03</i></span>
+                    </a>
+                    <meta itemprop="position" content="3" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="l-inner">
+        <div class="p-human__wrap2">
+          <a class="p-human__link" href="crosstalk01.html">
+            <picture class="p-human__img">
+              <source srcset="./assets/images/works/work_img_02_sp.webp" media="(max-width: 768px)" type="image/webp">
+              <source srcset="./assets/images/works/work_img_02_sp.png" media="(max-width: 768px)" type="image/png">
+              <source srcset="./assets/images/works/work_img_02.webp" media="(min-width: 769px)" type="image/webp">
+              <img src="./assets/images/works/work_img_02.png" alt="">
+            </picture>
+            <div class="p-human__link__head">
+              <h4 class="c-heading l-inner-sm__sp text-white text-black-sp p-crosstalk__heading">
+                <img class="c-heading__svg u-hidden-pc" src="./assets/images/works/icon-black.svg" alt="">
+                <img class="c-heading__svg u-hidden-sp" src="./assets/images/works/icon-white.svg" alt="">
+                <i>CROSSTALK</i>
+                <span class="c-heading__num">01</span>
+              </h4>
+              <span class="p-human__link__text">
+                <span class="p-human__link__text2">お客さんの「困った」を</span><br>
+                <span class="p-human__link__text2">チームで解決していく面白さ</span>
+              </span>
+            </div>
+          </a>
+          <a class="p-human__link" href="crosstalk02.html">
+            <picture class="p-human__img">
+              <source srcset="./assets/images/works/work_img_03_sp.webp" media="(max-width: 768px)" type="image/webp">
+              <source srcset="./assets/images/works/work_img_03_sp.png" media="(max-width: 768px)" type="image/png">
+              <source srcset="./assets/images/works/work_img_03.webp" media="(min-width: 769px)" type="image/webp">
+              <img src="./assets/images/works/work_img_03.png" alt="">
+            </picture>
+            <div class="p-human__link__head">
+              <h4 class="c-heading l-inner-sm__sp text-white text-black-sp p-crosstalk__heading">
+                <img class="c-heading__svg u-hidden-pc" src="./assets/images/works/icon-black.svg" alt="">
+                <img class="c-heading__svg u-hidden-sp" src="./assets/images/works/icon-white.svg" alt="">
+                <i>CROSSTALK</i>
+                <span class="c-heading__num">02</span>
+              </h4>
+              <span class="p-human__link__text">
+                <span class="p-human__link__text2">小さな壁を越えていくことが</span><br>
+                <span class="p-human__link__text2">自分にとって大きな一歩になる</span>
+              </span>
+            </div>
+          </a>
+          <a class="p-human__link" href="crosstalk03.html">
+            <picture class="p-human__img">
+              <source srcset="./assets/images/works/work_img_04_sp.webp" media="(max-width: 768px)" type="image/webp">
+              <source srcset="./assets/images/works/work_img_04_sp.png" media="(max-width: 768px)" type="image/png">
+              <source srcset="./assets/images/works/work_img_04.webp" media="(min-width: 769px)" type="image/webp">
+              <img src="./assets/images/works/work_img_04.png" alt="">
+            </picture>
+            <div class="p-human__link__head">
+              <h4 class="c-heading l-inner-sm__sp text-white text-black-sp p-crosstalk__heading">
+                <img class="c-heading__svg u-hidden-pc" src="./assets/images/works/icon-black.svg" alt="">
+                <img class="c-heading__svg u-hidden-sp" src="./assets/images/works/icon-white.svg" alt="">
+                <i>CROSSTALK</i>
+                <span class="c-heading__num">03</span>
+              </h4>
+              <span class="p-human__link__text u-hidden-sp">
+                <span class="p-human__link__text2">社長を一言で表すなら</span><br>
+                <span class="p-human__link__text2">人を超えた生命体？赤レンジャー？</span>
+              </span>
+              <span class="p-human__link__text u-hidden-pc">
+                <span class="p-human__link__text2">社長を一言で表すなら</span><br>
+                <span class="p-human__link__text2">人を超えた生命体？</span>
+                <span class="p-human__link__text2">赤レンジャー？</span>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="p-footer">
+    <div class="p-footer__inner l-inner">
+      <div class="p-footer__btn">
+        <a class="p-footer__btn__link" href="">ENTRY</a>
+      </div>
+      <nav class="p-footer__nav">
+        <ul class="p-footer__lists">
+          <li class="p-footer__list"><a href="company.html"><i>COMPANY</i><span class="p-footer__list-ja u-hidden-pc">会社情報</span></a></li>
+          <li class="p-footer__list"><a href="human&works.html"><i>WORKS & HUMAN</i><span class="p-footer__list-ja u-hidden-pc">人と仕事を知る</span></a></li>
+          <li class="p-footer__list"><a href="special.html"><i>SPECIAL CONTENT</i><span class="p-footer__list-ja u-hidden-pc">しくじりリスト</span></a></li>
+          <li class="p-footer__list"><a href="career.html"><i>CAREER</i><span class="p-footer__list-ja u-hidden-pc">キャリアを知る</span></a></li>
+          <li class="p-footer__list"><a href="recruit.html"><i>RECRUIT</i><span class="p-footer__list-ja u-hidden-pc">採用情報</span></a></li>
+        </ul>
+      </nav>
+      <a class="p-footer__logo" href="./">
+        <picture>
+          <source srcset="./assets/images/common/footer_logo.webp" media="(max-width: 768px)" type="image/webp">
+          <source srcset="./assets/images/common/footer_logo.png" media="(max-width: 768px)" type="image/webp">
+          <source srcset="./assets/images/common/footer_logo.webp" media="(min-width: 769px)" type="image/webp">
+          <img src="./assets/images/common/footer_logo.png" alt="">
+        </picture>
+      </a>
+      <p class="p-footer__copy"><small>COPYRIGHT &copy;  MICHIO SHOP CO.,LTD. ALL RIGHTS RESERVED.</small></p>
+    </div>
+  </footer>
+  <!-- JavaScript -->
+  <script src="./assets/js/script.js?ver=8135459498"></script>
+</body>
+
+</html>

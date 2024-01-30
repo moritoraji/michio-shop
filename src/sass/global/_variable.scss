@@ -1,0 +1,27 @@
+/********************************
+* インナー
+********************************/
+$l-inner: get-pc-vw(1306);
+
+// 余白
+$padding-pc: 3.3333%;
+$padding-sp: 6%;
+
+/********************************
+* フォント
+********************************/
+$base-font-family: 'Noto Sans JP', sans-serif;
+$sub-font-family: 'Barlow', sans-serif;
+
+// フォントサイズ
+$base-font-size: 16;
+
+/********************************
+* カラー
+********************************/
+$base-color: #E10112;
+$sub-color: #ccc;
+$base-bg: #fff;
+$base-text: #000;
+$black: #000;
+$white: #fff;

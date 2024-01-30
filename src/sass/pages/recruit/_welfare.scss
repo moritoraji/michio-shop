@@ -1,0 +1,57 @@
+@use "global" as *;
+
+.p-recruit__content2__head {
+  text-align: center;
+  margin-top: get-pc-vw(67);
+
+  @include mq(md) {
+    margin-top: get-sp-vw(30);
+  }
+}
+
+.p-recruit__content2__sub {
+  font-size: get-pc-vw(36);
+  line-height: 1;
+
+  @include mq(md) {
+    font-size: get-sp-vw(20);
+  }
+}
+
+.p-recruit__content2__flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: get-pc-vw(55);
+}
+
+.p-recruit__content2__img {
+  width: 31%;
+  margin-bottom: get-pc-vw(30);
+
+  @include mq(md) {
+    width: 48%;
+    margin-bottom: get-sp-vw(15);
+  }
+}
+
+.p-recruit__content2__text {
+  text-align: center;
+  margin-top: get-pc-vw(20);
+  font-size: get-pc-vw(16);
+  font-weight: 500;
+  line-height: 1.9;
+
+  @include mq(md) {
+    font-size: get-sp-vw(13);
+    margin-top: get-sp-vw(22);
+  }
+}
+
+.p-recruit__btn__wrap {
+  margin-top: get-pc-vw(60);
+
+  @include mq(md) {
+    margin-top: get-sp-vw(50);
+  }
+}

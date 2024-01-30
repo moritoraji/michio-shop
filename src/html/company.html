@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>会社概要</title>
+  <meta name="description" content="コンポーネントリストの概要です" />
+  <!-- ogp -->
+  <meta property="og:title" content="コンポーネント" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com" />
+  <meta property="og:image" content="https://example.com/images/common/ogp.jpg" />
+  <meta property="og:site_name" content="コンポーネント" />
+  <meta property="og:description" content="コンポーネントリストの概要です" />
+  <!-- twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="コンポーネントリストの概要です" />
+  <meta name="twitter:title" content="コンポーネント" />
+  <meta name="twitter:image" content="https://example.com/images/common/ogp.jpg" />
+  <!-- icon -->
+  <link rel="icon" href="./assets/images/common/icon-16x16.png" sizes="16x16" type="image/png" />
+  <link rel="apple-touch-icon" href="./assets/images/common/apple-touch-icon-152x152.png" />
+
+  <!-- googlefonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+
+
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/style.css?ver=8135459498" />
+
+</head>
+
+<body>
+  <header class="p-header l-header" id="js-header">
+    <div class="p-header__inner l-inner">
+      <div class="p-header__logo">
+        <h1 class="p-header__logo">
+          <a class="p-header__link" href="./">
+            ロゴ
+            <picture>
+              <source srcset="./assets/images/common/logo.webp" type="image/webp" width="180" height="50">
+              <img src="./assets/images/common/logo.png" alt="" decoding="async" width="180" height="50">
+            </picture>
+          </a>
+        </h1>
+      </div>
+      <nav class="p-header__nav">
+        <ul class="p-header__lists">
+          <li class="p-header__list"><a href="company.html"><i>COMPANY</i></a></li>
+          <li class="p-header__list"><a href="human&works.html"><i>WORKS & HUMAN</i></a></li>
+          <li class="p-header__list"><a href="special.html"><i>SPECIAL CONTENT</i></a></li>
+          <li class="p-header__list"><a href="career.html"><i>CAREER</i></a></li>
+          <li class="p-header__list"><a href="recruit.html"><i>RECRUIT</i></a></li>
+          <li class="p-header__entry"><a href="#">ENTRY</a></li>
+        </ul>
+      </nav>
+      <nav id="js-nav" class="p-header__nav_sp">
+        <div class="p-header__nav_scroll">
+          <div class="p-header__nav__logo">
+            <picture>
+              <source srcset="./assets/images/common/logo_nav.webp" type="image/webp" width="180" height="50">
+              <img src="./assets/images/common/logo_nav.png" alt="" decoding="async" width="180" height="50">
+            </picture>
+          </div>
+          <ul class="p-header__lists_sp">
+            <li class="p-header__list_sp"><a href="company.html"><i>COMPANY</i><span class="p-header__list-ja u-hidden-pc">会社情報</span></a></li>
+            <li class="p-header__list_sp"><a href="human&works.html"><i>WORKS & HUMAN</i><span class="p-header__list-ja u-hidden-pc">人と仕事を知る</span></a></li>
+            <li class="p-header__list_sp"><a href="special.html"><i>SPECIAL</i><span class="p-header__list-ja u-hidden-pc">しくじりリスト</span></a></li>
+            <li class="p-header__list_sp"><a href="career.html"><i>CAREER</i><span class="p-header__list-ja u-hidden-pc">キャリアを知る</span></a></li>
+            <li class="p-header__list_sp"><a href="recruit.html"><i>RECRUIT</i><span class="p-header__list-ja u-hidden-pc">採用情報</span></a></li>
+          </ul>
+          <div class="p-header__nav__logo2" >
+            <picture>
+              <source srcset="./assets/images/common/footer_logo.webp" type="image/webp">
+              <img src="./assets/images/common/footer_logo.png" alt="">
+            </picture>
+          </div>
+          <p class="p-header__nav__copy"><small>COPYRIGHT &copy;  MICHIO SHOP CO.,LTD. ALL RIGHTS RESERVED.</small></p>
+          <div class="p-header__nav__btn">
+            <a class="p-header__nav__link" href="">ENTRY</a>
+          </div>
+        </div>
+      </nav>
+      <div id="js-menu" class="p-header__menu_btn_wrapper u-hidden-pc">
+        <button id="js-menu_btn" type="button" class="p-header__menu_btn">
+          <span class="p-header__menu_btn_line"></span>
+          <span class="p-header__menu_btn_line"></span>
+          <span class="p-header__menu_btn_text">MENU</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="p-main">
+    <section class="p-comapny__slider">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/images/slide/slide_01.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/slide/slide_02.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/slide/slide_03.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/slide/slide_04.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-comapny__box">
+      <div class="l-inner">
+        <div class="p-comapny__box__wrapper">
+          <div class="p-comapny__box__table_head">
+            <button class="p-comapny__box__table__tab class_remove is-active" data-content="1" onclick="tab(1)">
+              <span class="p-comapny__box__table__en"><i>HISTORY</i></span>
+              <span>ミチオの歴史</span>
+            </button>
+            <button class="p-comapny__box__table__tab class_remove" data-content="2" onclick="tab(2)">
+              <span class="p-comapny__box__table__en"><i>CULTURE</i></span>
+              <span>ミチオカルチャー</span>
+            </button>
+          </div>
+
+          <div class="p-comapny__box__inner">
+            <!-- history_table -->
+            <div class="p-comapny__box__table history_table" data-content="1" aria-hidden="false">
+              <div class="c-breadcrumb">
+                <ul class="c-breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                  <li class="c-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a class="c-breadcrumb__link" href="./" itemid="" itemscope itemtype="https://schema.org/Thing" itemprop="item">
+                      <span itemprop="name"><i>TOP</i></span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                  </li>
+                  <li class="c-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <span itemprop="name"><i>HISTORY</i></span>
+                    <meta itemprop="position" content="2" />
+                  </li>
+                </ul>
+              </div>
+
+              <h2 class="c-title">ミチオの<span class="c-title-red">歴史</span></h2>
+              <p class="p-comapny__box__text">ミチオショップが歩んできた100年近い歴史。<br>
+                昭和５年から始まったこの長い道のりは、<br class="u-hidden-pc">まるで人生のように山あり谷あり。<br class="u-hidden-pc">さまざまな試練を乗り越えてきました。</p>
+              <div class="p-comapny__list__inner">
+                <ul class="p-comapny__list">
+                  <li class="p-comapny__item">
+                    <div class="p-comapny__item__wrap">
+                      <p class="p-comapny__item__day">
+                        <span class="p-comapny__item__founding">創 業</span>
+                        <span class="p-comapny__item__num">1930</span>
+                      </p>
+                      <div class="p-comapny__item__content">
+                        <h3 class="p-comapny__item__head">リヤカー１台にのせた下駄が<br>
+                          すべての始まりだった。</h3>
+                        <p class="p-comapny_item__text">下駄を専門に販売する「竹内履物店」を開店。当初はリヤカーに商品を載せて行商からのスタートでした。下駄の販売だけでなく、鼻緒の修理なども手がけながら地域のお客様を広げていき、時代と共に一般的な靴も取り扱うようになりました。連島町に店舗を構えてからは、お客様の要望に合わせて地下足袋や作業用品など、商品の取り扱いジャンルも広がっていきました。</p>
+                      </div>
+                    </div>
+                    <div class="p-comapny__item__wrap2">
+                      <picture>
+                        <source class="p-comapny__item__img" srcset="./assets/images/company/company_history_01.webp" type="image/webp">
+                        <img class="p-comapny__item__img" src="./assets/images/company/company_history_01.jpg" decoding="async" alt="" />
+                      </picture>
+                    </div>
+                  </li>
+                  <li class="p-comapny__item">
+                    <div class="p-comapny__item__wrap3">
+                      <p class="p-comapny__item__day">
+                        <span class="p-comapny__item__founding">拡 大</span>
+                        <span class="p-comapny__item__num">1964</span>
+                      </p>
+                      <div class="p-comapny__item__content2">
+                        <h3 class="p-comapny__item__head">水島の工場のきらめきが<br>
+                          百万ドルの夜景になっていく。
+                        </h3>
+                        <p class="p-comapny_item__text">「株式会社　竹内道夫商店」を設立。水島臨海工業地帯の建設ラッシュを迎え、水島エリアは多くの建築作業員で賑わっていました。「竹内道夫商店」は、地下足袋の有名ブランドの総代理店として水島商店街に店舗を構え、岡山だけでなく中国・四国地方からも多くのお客様が訪れて、連日行列が絶えませんでした。1981年（昭和56年）には倉敷店もオープン。日本経済の成長と共に、足袋やワークウェアも飛ぶように売れていきました。</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="p-comapny__item">
+                    <div class="p-comapny__item__wrap">
+                      <p class="p-comapny__item__day">
+                        <span class="p-comapny__item__founding">逆 境</span>
+                        <span class="p-comapny__item__num">1997</span>
+                      </p>
+                      <div class="p-comapny__item__content">
+                        <h3 class="p-comapny__item__head">バブル崩壊の余波が<br>
+                          幻想を打ち砕いた。
+                        </h3>
+                        <p class="p-comapny_item__text">バブル崩壊以降、世の中の消費意欲が減少していくなか、前年に3店舗で過去最高の売上を記録していましたが、そこをピークに翌年から一気にダウン。財務状況を冷静に分析した結果、倉敷店の閉店を余儀なくされました。良いときは永遠に続くものではないという当たり前の事実と向き合い、経営改革に着手。2002年には水島店も閉店させ、本店のみの1店舗という体制まで縮小しました。</p>
+                      </div>
+                    </div>
+                    <div class="p-comapny__item__wrap2">
+                      <picture>
+                        <source class="p-comapny__item__img"  srcset="./assets/images/company/company_history_02.webp" type="image/webp">
+                        <img class="p-comapny__item__img" src="./assets/images/company/company_history_02.jpg" decoding="async" alt="" />
+                      </picture>
+                    </div>
+                  </li>
+                  <li class="p-comapny__item">
+                    <div class="p-comapny__item__wrap3">
+                      <p class="p-comapny__item__day">
+                        <span class="p-comapny__item__founding">挑 戦</span>
+                        <span class="p-comapny__item__num">2002</span>
+                      </p>
+                      <div class="p-comapny__item__content2">
+                        <h3 class="p-comapny__item__head">インターネットの登場が<br>
+                          新たな光をもたらしていく。
+                        </h3>
+                        <p class="p-comapny_item__text">水島店が閉店したこの年、これまでの店舗販売という「待ち」のスタイルから「外商」という、自分たちから販売を仕掛けていくことに注力。さらに世の中に登場し始めたインターネットに着目し、ホームページを作成。インターネット事業部を立ち上げ、2005年からYahoo!ショッピングにも出店しました。そこでの初めての受注は、東京・八丈島の給食センターから。倉敷にいながら全国のお客様とつながれるEC販売に大きな可能性を感じることになりました。</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="p-comapny__item">
+                    <div class="p-comapny__item__wrap">
+                      <p class="p-comapny__item__day">
+                        <span class="p-comapny__item__founding">船 出</span>
+                        <span class="p-comapny__item__num">2020</span>
+                      </p>
+                      <div class="p-comapny__item__content">
+                        <h3 class="p-comapny__item__head">EC販売への転換で大躍進！<br>
+                          目指すは、日本のテッペン！
+                        </h3>
+                        <p class="p-comapny_item__text">最後の実店舗を畳み、外商販売とECサイトによるインターネット販売に事業を振り切りました。2021年には「株式会社ミチオショップ」に社名変更。Yahoo、楽天、Amazonなど大手通販サイトを中心に8つのECサイトを運営しながら、メーカーとのコラボレーションでオリジナル商品も開発。過去最高の売上も達成して、業界内でもベスト5に入る位置まで昇ってきました。目指すはワークウェア分野のECサイトで売上「日本一」です！</p>
+                      </div>
+                    </div>
+                    <div class="p-comapny__item__wrap2">
+                      <picture>
+                        <source class="p-comapny__item__img"  srcset="./assets/images/company/company_history_03.webp" type="image/webp">
+                        <img class="p-comapny__item__img" src="./assets/images/company/company_history_03.jpg" decoding="async" alt="" />
+                      </picture>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-comapny__box__inner2">
+            <!-- culture_table -->
+            <div class="p-comapny__box__table culture_table" data-content="2" aria-hidden="true">
+              <div class="c-breadcrumb">
+                <ul class="c-breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                  <li class="c-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a class="c-breadcrumb__link" href="./" itemid="" itemscope itemtype="https://schema.org/Thing" itemprop="item">
+                      <span itemprop="name"><i>TOP</i></span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                  </li>
+                  <li class="c-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <span itemprop="name"><i>CULTURE</i></span>
+                    <meta itemprop="position" content="2" />
+                  </li>
+                </ul>
+              </div>
+              <h2 class="c-title">ミチオ<span class="c-title-red">カルチャー</span></h2>
+              <p class="p-comapny__box__text">仕事だからとドライに割り切るのではなく、<br class="u-hidden-pc">毎日通う職場だからこそ「楽しみ」を感じて欲しい。<br>
+                そんな想いから、ちょっと他にはない「カルチャー」が根づいています。</p>
+              <div class="p-comapny__history__inner">
+                <ul class="p-comapny__history__list">
+                  <li class="p-comapny__history__item">
+                    <div class="p-comapny__history__content">
+                      <div class="p-comapny__history__head">
+                        <h3 class="c-heading text-red">
+                          <img class="c-heading__svg" src="./assets/images/top/icon-red.svg" alt="">
+                          <i>CULTURE</i>
+                        </h3>
+                        <p class="p-comapny__history__head-ja">TIME CARD<br><br class="u-hidden-sp"></p>
+                      </div>
+                      <div class="p-comapny__history__body">
+                        <p class="p-comapny__history__sub">毎週金曜はタイムカードに<br>
+                          行列ができるらしい…！？</p>
+                        <p class="p-comapny__history__text">というのも、毎週金曜は「ノー残業デー」。定時の18時になると社員一同こぞってタイムカードを打刻します。そもそも仕事もプライベートも充実してほしいという考えなので、金曜以外でも残業はかなり少なめ。夏場の繁忙期でも、全員総出で出荷作業を手伝い、代表も梱包に汗を流して、19時前には帰れるように助け合っています。</p>
+                      </div>
+                    </div>
+                    <div class="p-comapny__history__wrap">
+                      <picture>
+                        <source class="p-comapny__history__img"  srcset="./assets/images/company/company_culture_01.webp" type="image/webp">
+                        <img class="p-comapny__history__img" src="./assets/images/company/company_culture_01.jpg" decoding="async" alt="" />
+                      </picture>
+                    </div>
+                  </li>
+                  <li class="p-comapny__history__item">
+                    <div class="p-comapny__history__content">
+                      <div class="p-comapny__history__head">
+                        <h3 class="c-heading text-red">
+                          <img class="c-heading__svg" src="./assets/images/top/icon-red.svg" alt="">
+                          <i>CULTURE</i>
+                        </h3>
+                        <p class="p-comapny__history__head-ja">REQUEST <br class="u-hidden-sp">BOX<span class="p-comapny__history__head-sm">要望書</span></p>
+                      </div>
+                      <div class="p-comapny__history__body">
+                        <p class="p-comapny__history__sub">七夕の短冊より<br>
+                          願いごとが叶うかも。</p>
+                        <p class="p-comapny__history__text">年に2回、自由に要望を記入できる「目安箱」のようなものを設置。社員の意見から、高さを上下できる最先端のデスクや、目にやさしいLEDの照明、おしゃれなユニフォームなど、さまざまな環境改善や働き方を（コストは度外視して）実施しています。そこまで無茶なオーダーでなければ、大抵は実現してくれますよ。</p>
+                      </div>
+                    </div>
+                    <div class="p-comapny__history__wrap">
+                      <picture>
+                        <source class="p-comapny__history__img" srcset="./assets/images/company/company_culture_02.webp" type="image/webp">
+                        <img class="p-comapny__history__img" src="./assets/images/company/company_culture_02.jpg" decoding="async" alt="" />
+                      </picture>
+                    </div>
+                  </li>
+                  <li class="p-comapny__history__item">
+                    <div class="p-comapny__history__content">
+                      <div class="p-comapny__history__head">
+                        <h3 class="c-heading text-red">
+                          <img class="c-heading__svg" src="./assets/images/top/icon-red.svg" alt="">
+                          <i>CULTURE</i>
+                        </h3>
+                        <p class="p-comapny__history__head-ja">ENTER-<br>TAINMENT</p>
+                      </div>
+                      <div class="p-comapny__history__body">
+                        <p class="p-comapny__history__sub">まるで放課後ノリ！？<br>
+                          楽しくなければ仕事じゃない！</p>
+                        <p class="p-comapny__history__text">ひょんなことから開催された代表とのタイピングスピード勝負（結果的に代表はビリから2番目）やプレステ対決など、「仕事は楽しく」というモットーが社内に浸透しています。ときには大画面のモニターでスポーツ観戦をしたり、サッカー好きの社員と作業服を着てサッカーをプレーするCMを作ったりもしました。</p>
+                      </div>
+                    </div>
+                    <div class="p-comapny__history__wrap">
+                      <picture>
+                        <source class="p-comapny__history__img" srcset="./assets/images/company/company_culture_03.webp" type="image/webp">
+                        <img class="p-comapny__history__img" src="./assets/images/company/company_culture_03.jpg" decoding="async" alt="" />
+                      </picture>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="p-footer">
+    <div class="p-footer__inner l-inner">
+      <div class="p-footer__btn">
+        <a class="p-footer__btn__link" href="">ENTRY</a>
+      </div>
+      <nav class="p-footer__nav">
+        <ul class="p-footer__lists">
+          <li class="p-footer__list"><a href="company.html"><i>COMPANY</i><span class="p-footer__list-ja u-hidden-pc">会社情報</span></a></li>
+          <li class="p-footer__list"><a href="human&works.html"><i>WORKS & HUMAN</i><span class="p-footer__list-ja u-hidden-pc">人と仕事を知る</span></a></li>
+          <li class="p-footer__list"><a href="special.html"><i>SPECIAL CONTENT</i><span class="p-footer__list-ja u-hidden-pc">しくじりリスト</span></a></li>
+          <li class="p-footer__list"><a href="career.html"><i>CAREER</i><span class="p-footer__list-ja u-hidden-pc">キャリアを知る</span></a></li>
+          <li class="p-footer__list"><a href="recruit.html"><i>RECRUIT</i><span class="p-footer__list-ja u-hidden-pc">採用情報</span></a></li>
+        </ul>
+      </nav>
+      <a class="p-footer__logo" href="./">
+        <picture>
+          <source srcset="./assets/images/common/footer_logo.webp" media="(max-width: 768px)" type="image/webp">
+          <source srcset="./assets/images/common/footer_logo.png" media="(max-width: 768px)" type="image/png">
+          <source srcset="./assets/images/common/footer_logo.webp" media="(min-width: 769px)" type="image/webp">
+          <img src="./assets/images/common/footer_logo.png" alt="">
+        </picture>
+      </a>
+      <p class="p-footer__copy"><small>COPYRIGHT &copy;  MICHIO SHOP CO.,LTD. ALL RIGHTS RESERVED.</small></p>
+    </div>
+  </footer>
+  <!-- JavaScript -->
+  <script src="./assets/js/script.js?ver=8135459498"></script>
+  <script>
+    function tab(contentId) { // 表示初期化
+      document.querySelectorAll(".p-comapny__box__table").forEach(el => el.setAttribute('aria-hidden', 'true'));
+      document.querySelectorAll(`.class_remove`).forEach(el => el.classList.remove('is-active'));
+      // 指定のタブを表示
+      document.querySelectorAll(`.p-comapny__box__table[data-content="${contentId}"`).forEach(el => el.setAttribute('aria-hidden', 'false'));
+      // document.querySelectorAll(`.p-newemployee_sec_table3[data-content="${contentId}"`).forEach(el => el.setAttribute('aria-hidden', 'false'));
+      document.querySelectorAll(`.p-comapny__box__table__tab[data-content="${contentId}"`).forEach(el => el.classList.add('is-active'));
+    }
+  </script>
+</body>
+
+</html>
