@@ -312,6 +312,11 @@
   display: block;
   margin-top: get-pc-vw(100);
   position: relative;
+  bottom: get-pc-vw(-12);
+
+  @include mq(md) {
+    bottom: 0;
+  }
 
   &::before {
     position: absolute;

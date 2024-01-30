@@ -21,13 +21,8 @@
   <meta name="twitter:title" content="コンポーネント" />
   <meta name="twitter:image" content="https://example.com/images/common/ogp.jpg" />
   <!-- icon -->
-  <link rel="icon" href="./assets/images/common/icon-16x16.png" sizes="16x16" type="image/png" />
-  <link rel="icon" href="./assets/images/common/icon-32x32.png" sizes="32x32" type="image/png" />
-  <link rel="icon" href="./assets/images/common/icon-48x48.png" sizes="48x48" type="image/png" />
-  <link rel="icon" href="./assets/images/common/icon-72x72.png" sizes="72x72" type="image/png" />
-  <link rel="apple-touch-icon" href="./assets/images/common/apple-touch-icon-152x152.png" />
-  <!--  ファビコン -->
-  <link rel="icon" href="#" />
+  <link rel="icon" href="./assets/images/common/michioshop.png" sizes="100x100" type="image/png" />
+
   <!-- googlefonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,9 +30,10 @@
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- css -->
-  <link rel="stylesheet" href="./assets/css/style.css?ver=8135459498" />
+  <link rel="stylesheet" href="./assets/css/style.css?ver=20240130" />
 </head>
 <body>
+  <div id="top"></div>
   <header class="p-header l-header" id="js-header">
     <div class="p-header__inner l-inner">
       <div class="p-header__logo">
@@ -358,6 +354,13 @@
         <img src="./assets/images/crosstalk/theme_img_06.jpg" alt="">
       </picture>
     </section>
+    <a href="#top" id="page__top">
+      <span class="pagetop__arrow"></span>
+      <picture class="pagetop__img">
+        <source srcset="./assets/images/common/top_btn.webp" media="(min-width: 769px)" type="image/webp">
+        <img src="./assets/images/common/top_btn.png" alt="">
+      </picture>
+    </a>
   </main>
   <footer class="p-footer">
     <div class="p-footer__inner l-inner">
@@ -385,6 +388,6 @@
     </div>
   </footer>
   <!-- JavaScript -->
-  <script src="./assets/js/script.js?ver=8135459498"></script>
+  <script src="./assets/js/script.js?ver=20240130"></script>
 </body>
 </html>

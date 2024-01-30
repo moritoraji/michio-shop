@@ -22,8 +22,7 @@
   <meta name="twitter:title" content="コンポーネント" />
   <meta name="twitter:image" content="https://example.com/images/common/ogp.jpg" />
   <!-- icon -->
-  <link rel="icon" href="./assets/images/common/icon-16x16.png" sizes="16x16" type="image/png" />
-  <link rel="apple-touch-icon" href="./assets/images/common/apple-touch-icon-152x152.png" />
+  <link rel="icon" href="./assets/images/common/michioshop.png" sizes="100x100" type="image/png" />
 
   <!-- googlefonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,11 +30,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
 
   <!-- css -->
-  <link rel="stylesheet" href="./assets/css/style.css?ver=8135459498" />
+  <link rel="stylesheet" href="./assets/css/style.css?ver=20240130" />
 
 </head>
 
 <body>
+  <div id="top"></div>
   <header class="p-header l-header p-header__special" id="js-header">
     <div class="p-header__inner l-inner">
       <div class="p-header__logo">
@@ -100,12 +100,7 @@
       <div class="p-special__video__wrap">
         <div class="p-special__video">
           <video class="p-special__video" loop autoplay muted src="./assets/images/special/shikujiri.mp4"></video>
-          <div class="card"></div>
-          <svg class="svg">
-            <clipPath id="triangle" clipPathUnits="objectBoundingBox">
-              <path d="m0 0-1 0c0 0 1 0 1 1z"></path>
-            </clipPath>
-          </svg>
+          <img class="p-special__video__img" src="./assets/images/special/circle__icon.svg" alt="">
         </div>
         <div class="p-special__video__wrap-sp">
           <section class="p-special__fv">
@@ -238,7 +233,14 @@
           </section>
         </div>
       </div>
-  </div>
+    </div>
+    <a href="#top" id="page__top">
+      <span class="pagetop__arrow"></span>
+      <picture class="pagetop__img">
+        <source srcset="./assets/images/common/top_btn.webp" media="(min-width: 769px)" type="image/webp">
+        <img src="./assets/images/common/top_btn.png" alt="">
+      </picture>
+    </a>
   </main>
 
   <footer class="p-footer">
@@ -267,7 +269,7 @@
     </div>
   </footer>
   <!-- JavaScript -->
-  <script src="./assets/js/script.js?ver=8135459498"></script>
+  <script src="./assets/js/script.js?ver=20240130"></script>
 </body>
 
 </html>
