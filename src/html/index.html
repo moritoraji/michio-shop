@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
   <!-- meta情報 -->
-  <title>トップページ</title>
-  <meta name="description" content="コンポーネントリストの概要です" />
+  <title>採用情報 | MICHIO SHOP（ミチオショップ）</title>
+  <meta name="description" content="株式会社ミチオショップは100年近い歴史を歩んできた老舗アパレルです。ECサイトを中心にユニフォームやワークウェアなどを販売しています。" />
+  <meta name="keywords" content="採用情報、MICHIO SHOP（ミチオショップ）、作業服、岡山、倉敷">
   <!-- ogp -->
   <meta property="og:title" content="コンポーネント" />
   <meta property="og:type" content="website" />
@@ -26,7 +27,7 @@
   <!-- googlefonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,900;1,700&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,900;1,700&family=Noto+Sans+JP:wght@500;700;900&display=swap" rel="stylesheet">
 
   <!-- css -->
   <link rel="stylesheet" href="./assets/css/style.css?ver=8135459498" />
@@ -36,6 +37,7 @@
 </head>
 
 <body>
+  <div id="top"></div>
   <header class="p-header l-header" id="js-header">
     <div class="p-header__inner l-inner">
       <div class="p-header__logo">
@@ -99,10 +101,7 @@
     <section class="p-top__fv">
       <div class="p-top__fv__loading">
         <picture class="p-top__fv__loading__img">
-          <source srcset="./assets/images/common/logo_nav.webp" media="(max-width: 768px)" type="image/webp">
-          <source srcset="./assets/images/common/logo_nav.png" media="(max-width: 768px)" type="image/png">
-          <source srcset="./assets/images/common/logo_nav.webp" media="(min-width: 769px)" type="image/webp">
-          <img src="./assets/images/common/logo_nav.png" alt="">
+          <img src="./assets/images/common/logo.svg" alt="">
         </picture>
       </div>
       <div class="p-top__fv__inner">
@@ -314,6 +313,9 @@
         </div>
       </div>
     </section>
+    <a href="#top" id="page__top">
+      <span class="pagetop__arrow"></span>
+    </a>
   </main>
   <footer class="p-footer">
     <div class="p-footer__inner l-inner">

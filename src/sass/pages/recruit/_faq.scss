@@ -3,9 +3,11 @@
 .p-recruit__wrapper {
   display: flex;
   padding-top: get-pc-vw(92);
+  padding-bottom: get-pc-vw(120);
   
   @include mq(md) {
     flex-direction: column;
+    padding-bottom:  get-sp-vw(105);
   }
 }
 

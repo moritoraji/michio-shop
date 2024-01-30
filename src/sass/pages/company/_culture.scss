@@ -32,23 +32,40 @@
 
   &::before {
     position: absolute;
-    counter-increment: number 1;
-    content: "0" counter(number) ;
-    font-size: get-pc-vw(400);
-    font-family: $sub-font-family;
-    top: get-pc-vw(-208);
-    left: get-pc-vw(-120);
-    width: 100%;
-    height: 100%;
+    content: "";
+    width: get-pc-vw(470);
+    height: get-pc-vw(345);
+    top: get-pc-vw(-150);
+    left: get-pc-vw(-83);
+    background-image: url(../../assets/images/company/company_text_01.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
     z-index: -1;
-    opacity: 0.1;
-    letter-spacing: 0.06em;
 
     @include mq(md) {
       font-size: get-sp-vw(200);
-      top: get-sp-vw(-100);
-      left: get-sp-vw(-40);
+      top: get-sp-vw(-69);
+      left: get-sp-vw(-11);
+      width: get-sp-vw(220);
+      height: get-sp-vw(160);
     }
+  }
+}
+
+.p-comapny__history__num01 {
+  &::before {
+
+    background-image: url(../../assets/images/company/company_text_01.jpg);
+  }
+}
+.p-comapny__history__num02 {
+  &::before {
+    background-image: url(../../assets/images/company/company_text_02.jpg);
+  }
+}
+.p-comapny__history__num03 {
+  &::before {
+    background-image: url(../../assets/images/company/company_text_03.jpg);
   }
 }
 

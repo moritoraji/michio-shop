@@ -23,6 +23,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: get-pc-vw(55);
+  margin-bottom: get-pc-vw(40);
+
+  @include mq(md) {
+    margin-bottom: get-sp-vw(35);
+  }
 }
 
 .p-recruit__content2__img {
