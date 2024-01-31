@@ -4,7 +4,7 @@
   padding-top: get-pc-vw(5);
 
   @include mq(md) {
-    padding-top: get-sp-vw(0);
+    padding-top: get-sp-vw(30);
     padding-bottom: 0;
   }
 

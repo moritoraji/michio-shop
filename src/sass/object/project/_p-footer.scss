@@ -126,14 +126,16 @@
 
 .p-footer__list a {
   font-family: $sub-font-family;
-  @include font(17, 0, 83, 700);
+  @include font(17, 17, 83, 700);
   padding: 0 get-pc-vw(20);
   font-weight: bold;
   display: block;
+
   @include mq(md) {
     padding: 0;
     padding-left: get-sp-vw(10);
     padding-bottom: get-sp-vw(10);
+    font-size: get-sp-vw(17);
     border-bottom: solid 2px #fff;
   }
 }
