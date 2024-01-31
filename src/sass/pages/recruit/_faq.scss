@@ -27,7 +27,7 @@
 
 .p-recruit__box {
   width: 85%;
-  margin-top: get-pc-vw(27);
+  margin-top: 0;
 
   @include mq(md) {
     width: 100%;

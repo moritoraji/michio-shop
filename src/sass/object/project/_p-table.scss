@@ -26,6 +26,10 @@
     height: auto;
     padding: get-sp-vw(25) 0 get-sp-vw(22);
   }
+
+  &:last-of-type {
+    border-bottom: solid 1px $black;
+  }
 }
 
 .p-table__body__th {
