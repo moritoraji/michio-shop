@@ -15,8 +15,12 @@
   padding-top: get-pc-vw(50);
 
   @include mq(md) {
-    padding-top: get-sp-vw(0);
+    padding-top: get-sp-vw(50);
     padding-bottom: get-sp-vw(48);
+
+    &:first-of-type {
+      padding-top: 0;
+    }
   }
 
   &:last-of-type {

@@ -1,0 +1,24 @@
+@use "global" as *;
+
+#page__top {
+  height: get-pc-vw(70);
+  width: get-pc-vw(70);
+  position: fixed;
+  right: get-pc-vw(30);
+  bottom: get-pc-vw(30);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 101;
+
+  @include mq(md) {
+    height: get-sp-vw(40);
+    width: get-sp-vw(40);
+    right: get-sp-vw(10);
+    bottom: get-sp-vw(20);
+  }
+}
+
+.pagetop__img {
+  display: block;
+}

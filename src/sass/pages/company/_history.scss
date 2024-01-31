@@ -154,23 +154,42 @@
     margin: get-sp-vw(60) auto 0;
   }
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: get-pc-vw(43);
-    height: get-pc-vw(43);
-    top: get-pc-vw(-25);
-    left: get-pc-vw(-24);
-    background-image: url(../../assets/images/company/company_icon.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
+  // &::before {
+  //   position: absolute;
+  //   content: "";
+  //   width: get-pc-vw(43);
+  //   height: get-pc-vw(43);
+  //   top: get-pc-vw(-25);
+  //   left: get-pc-vw(-24);
+  //   background-image: url(../../assets/images/company/company_icon.svg);
+  //   background-size: 100%;
+  //   background-repeat: no-repeat;
 
-    @include mq(md) {
-      width: get-sp-vw(43);
-      height: get-sp-vw(43);
-      top: get-sp-vw(-25);
-      left: get-sp-vw(-24);
-    }
+  //   @include mq(md) {
+  //     width: get-sp-vw(43);
+  //     height: get-sp-vw(43);
+  //     top: get-sp-vw(-25);
+  //     left: get-sp-vw(-24);
+  //   }
+  // }
+}
+
+.p-comapny__item__lightbox__img {
+  position: absolute;
+  content: "";
+  width: get-pc-vw(43);
+  height: get-pc-vw(43);
+  top: get-pc-vw(-25);
+  left: get-pc-vw(-24);
+  background-image: url(../../assets/images/company/company_icon.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  @include mq(md) {
+    width: get-sp-vw(43);
+    height: get-sp-vw(43);
+    top: get-sp-vw(-25);
+    left: get-sp-vw(-24);
   }
 }
 

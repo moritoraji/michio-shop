@@ -2,6 +2,11 @@
 
 .swiper {
   width: 100%;
+  border-radius: get-pc-vw(15);
+
+  @include mq(md) {
+    border-radius: get-sp-vw(15);
+  }
 }
 
 .swiper-slide{

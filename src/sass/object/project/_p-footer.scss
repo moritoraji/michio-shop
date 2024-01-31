@@ -2,10 +2,13 @@
 
 .p-footer {
   position: relative;
+  z-index: 100;
   padding-top: get-pc-vw(90);
+
 
   @include mq(md) {
     padding-top: get-sp-vw(50);
+    bottom: 0;
   }
 
   &::before {
@@ -15,7 +18,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-image: url(../../assets/images/common/footer_bg.jpg);
+    background-image: url(../../assets/images/common/footer_bg.png);
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: -1;
@@ -113,9 +116,17 @@
       display: none;
     }
   }
+
+  &:first-of-type {
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .p-footer__list a {
+  font-family: $sub-font-family;
+  @include font(17, 17, 83, 700);
   padding: 0 get-pc-vw(20);
   font-weight: bold;
   display: block;
@@ -124,6 +135,7 @@
     padding: 0;
     padding-left: get-sp-vw(10);
     padding-bottom: get-sp-vw(10);
+    font-size: get-sp-vw(17);
     border-bottom: solid 2px #fff;
   }
 }

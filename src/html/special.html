@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
   <!-- meta情報 -->
-  <title>採用情報</title>
-  <meta name="description" content="コンポーネントリストの概要です" />
+  <title>しくじりリスト | MICHIO SHOP（ミチオショップ）</title>
+  <meta name="description" content="ミチオショップのスペシャルコンテンツが掲載しています。" />
+  <meta name="keywords" content="スペシャルコンテンツ、MICHIO SHOP（ミチオショップ）">
   <!-- ogp -->
   <meta property="og:title" content="コンポーネント" />
   <meta property="og:type" content="website" />
@@ -21,8 +22,7 @@
   <meta name="twitter:title" content="コンポーネント" />
   <meta name="twitter:image" content="https://example.com/images/common/ogp.jpg" />
   <!-- icon -->
-  <link rel="icon" href="./assets/images/common/icon-16x16.png" sizes="16x16" type="image/png" />
-  <link rel="apple-touch-icon" href="./assets/images/common/apple-touch-icon-152x152.png" />
+  <link rel="icon" href="./assets/images/common/michioshop.png" sizes="100x100" type="image/png" />
 
   <!-- googlefonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,11 +30,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
 
   <!-- css -->
-  <link rel="stylesheet" href="./assets/css/style.css?ver=8135459498" />
+  <link rel="stylesheet" href="./assets/css/style.css?ver=20240131" />
 
 </head>
 
 <body>
+  <div id="top"></div>
   <header class="p-header l-header p-header__special" id="js-header">
     <div class="p-header__inner l-inner">
       <div class="p-header__logo">
@@ -55,7 +56,7 @@
           <li class="p-header__list"><a href="special.html"><i>SPECIAL CONTENT</i></a></li>
           <li class="p-header__list"><a href="career.html"><i>CAREER</i></a></li>
           <li class="p-header__list"><a href="recruit.html"><i>RECRUIT</i></a></li>
-          <li class="p-header__entry"><a href="#">ENTRY</a></li>
+          <li class="p-header__entry"><a href="https://job.mynavi.jp/25/pc/search/corp214069/outline.html">ENTRY</a></li>
         </ul>
       </nav>
       <nav id="js-nav" class="p-header__nav_sp">
@@ -81,7 +82,7 @@
           </div>
           <p class="p-header__nav__copy"><small>COPYRIGHT &copy;  MICHIO SHOP CO.,LTD. ALL RIGHTS RESERVED.</small></p>
           <div class="p-header__nav__btn">
-            <a class="p-header__nav__link" href="">ENTRY</a>
+            <a class="p-header__nav__link" href="https://job.mynavi.jp/25/pc/search/corp214069/outline.html">ENTRY</a>
           </div>
         </div>
       </nav>
@@ -98,7 +99,8 @@
     <div class="l-inner p-special__inner">
       <div class="p-special__video__wrap">
         <div class="p-special__video">
-          <video class="p-special__video" autoplay muted src="./assets/images/special/shikujiri.mp4"></video>
+          <video class="p-special__video" loop autoplay muted src="./assets/images/special/shikujiri.mp4"></video>
+          <img class="p-special__video__img" src="./assets/images/special/circle__icon.svg" alt="">
         </div>
         <div class="p-special__video__wrap-sp">
           <section class="p-special__fv">
@@ -118,7 +120,7 @@
                 </ul>
               </div>
               <div class="p-special__fv__wrap">
-                <p class="p-special__fv__head"><i>SPECIAL CONTENT</i></p>
+                <!-- <p class="p-special__fv__head"><i>SPECIAL CONTENT</i></p> -->
                 <h2 class="p-special__fv__title">
                   <picture class="p-special__fv__img">
                     <source srcset="./assets/images/special/special_title.webp" media="(max-width: 768px)" type="image/webp">
@@ -231,19 +233,26 @@
           </section>
         </div>
       </div>
-  </div>
+    </div>
+    <a href="#top" id="page__top">
+      <span class="pagetop__arrow"></span>
+      <picture class="pagetop__img">
+        <source srcset="./assets/images/common/top_btn.webp" media="(min-width: 769px)" type="image/webp">
+        <img src="./assets/images/common/top_btn.png" alt="">
+      </picture>
+    </a>
   </main>
 
   <footer class="p-footer">
     <div class="p-footer__inner l-inner">
       <div class="p-footer__btn">
-        <a class="p-footer__btn__link" href="#">ENTRY</a>
+        <a class="p-footer__btn__link" href="https://job.mynavi.jp/25/pc/search/corp214069/outline.html">ENTRY</a>
       </div>
       <nav class="p-footer__nav">
         <ul class="p-footer__lists">
           <li class="p-footer__list"><a href="company.html"><i>COMPANY</i><span class="p-footer__list-ja u-hidden-pc">会社情報</span></a></li>
           <li class="p-footer__list"><a href="human&works.html"><i>WORKS & HUMAN</i><span class="p-footer__list-ja u-hidden-pc">人と仕事を知る</span></a></li>
-          <li class="p-footer__list"><a href="special.html"><i>SPECIAL CONTENT</i><span class="p-footer__list-ja u-hidden-pc">しくじりリスト</span></a></li>
+          <li class="p-footer__list"><a href="special.html"><i>SPECIAL</i><span class="p-footer__list-ja u-hidden-pc">しくじりリスト</span></a></li>
           <li class="p-footer__list"><a href="career.html"><i>CAREER</i><span class="p-footer__list-ja u-hidden-pc">キャリアを知る</span></a></li>
           <li class="p-footer__list"><a href="recruit.html"><i>RECRUIT</i><span class="p-footer__list-ja u-hidden-pc">採用情報</span></a></li>
         </ul>
@@ -260,7 +269,7 @@
     </div>
   </footer>
   <!-- JavaScript -->
-  <script src="./assets/js/script.js?ver=8135459498"></script>
+  <script src="./assets/js/script.js?ver=20240131"></script>
 </body>
 
 </html>

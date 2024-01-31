@@ -2,6 +2,7 @@
 
 .p-special__inner {
   // background-color: $white;
+    // background-color: $white;
   border-radius: get-pc-vw(5);
   margin-bottom: get-pc-vw(30);
 
@@ -13,6 +14,17 @@
 .p-special__video__wrap {
   position: relative;
   height: 100%;
+
+  &::before {
+      position: fixed;
+      content: '';
+      width: 100%;
+      height: get-pc-vw(26);
+      top: 0;
+      right: 0;
+      background: #fff;
+      z-index: 99;
+  }
 }
 
 .p-special__video__wrap-sp {
@@ -25,16 +37,66 @@
 .p-special__video {
   position: sticky;
   border-radius: get-sp-vw(5);
-  top: get-pc-vw(130);
+  top: get-pc-vw(25);
   left: 0;
   width: 100%;
   height: 100vh;
   object-fit: cover;
   z-index: -1;
 
-  @include mq(md) {
-    top: get-sp-vw(100);
+  &::before {
+    position: fixed;
+    content: "";
+    width: get-pc-vw(17);
+    height: get-pc-vw(17);
+    top: get-pc-vw(26);
+    right: calc((100% - get-pc-vw(1306))/2);
+    background-image: url(../../assets/images/special/circle__icon.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @include mq(md) {
+      width: get-sp-vw(5);
+      height: get-sp-vw(5);
+      right: calc((100% - get-sp-vw(353))/2);
+    }
   }
+
+  &::after {
+    position: fixed;
+    content: "";
+    width: get-pc-vw(17);
+    height: get-pc-vw(17);
+    top: get-pc-vw(26);
+    left: calc((100% - get-pc-vw(1306))/2);
+    transform: rotate(270deg);
+    background-image: url(../../assets/images/special/circle__icon.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @include mq(md) {
+      width: get-sp-vw(5);
+      height: get-sp-vw(5);
+      left: calc((100% - get-sp-vw(353))/2);
+    }
+  }
+
+  @include mq(md) {
+    // top: get-sp-vw(100);
+  }
+}
+
+.p-special__video {
+
+  img {
+  position: sticky;
+  width: get-pc-vw(17);
+  height: get-pc-vw(17);
+  top: 0;
+  right: 0;
+  display: block;
+  }
+
 }
 
 .p-special__fv {
@@ -44,11 +106,16 @@
   left: 50%;
   transform: translateX(-50%);
 
+
+  @include mq(md) {
+    width: 90%;
+  }
+
   .c-breadcrumb {
     padding-top: get-pc-vw(35);
 
     @include mq(md) {
-      padding-top: get-sp-vw(30);
+      padding-top: get-sp-vw(17);
     }
   }
   .c-breadcrumb__link {

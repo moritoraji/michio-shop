@@ -106,7 +106,7 @@
   width: get-sp-vw(40);
   position: absolute;
   right: get-sp-vw(5);
-
+  z-index: 9998;
 }
 
 .p-header__menu_btn_text {
@@ -187,6 +187,7 @@
   background-color: $base-color;
   opacity: 0;
   transition: 0.2s;
+  z-index: 1000;
 
   &.is-active {
     overflow: visible;

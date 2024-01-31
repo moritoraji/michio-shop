@@ -108,7 +108,8 @@
 
   @include mq(md) {
     width: get-sp-vw(15);
-    height: get-sp-vw(870);
+    // height: get-sp-vw(870);
+    height: 100%;
   }
 }
 
@@ -127,7 +128,11 @@
 
   @include mq(md) {
     height: auto;
-    margin-bottom:  get-sp-vw(33);
+    margin-bottom: get-sp-vw(33);
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -177,6 +182,7 @@
   letter-spacing: -0.02em;
   margin-top: get-pc-vw(27);
   line-height: 1.8;
+  font-weight: 700;
 
   @include mq(md) {
     font-size: get-sp-vw(13);
@@ -197,6 +203,7 @@
 .p-career__content2__sub {
   font-size: get-pc-vw(36);
   line-height: 1;
+  font-weight: 900;
 
   @include mq(md) {
     font-size: get-sp-vw(20);

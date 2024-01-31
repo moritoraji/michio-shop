@@ -1,8 +1,12 @@
 @use "global" as *;
 
 .p-main {
-  padding-top: get-pc-vw(120);
-  position: relative;
+  padding-top: get-pc-vw(5);
+
+  @include mq(md) {
+    padding-top: get-sp-vw(30);
+    padding-bottom: 0;
+  }
 
   &::before {
     position: absolute;
@@ -20,10 +24,5 @@
       height: get-sp-vw(8);
       background-image: url(../../assets/images/common/header_img_sp.svg);
     }
-  }
-
-  @include mq(md) {
-    padding-top: get-sp-vw(90);
-    padding-bottom: 0;
   }
 }

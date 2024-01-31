@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
   <!-- meta情報 -->
-  <title>人と仕事を知る</title>
-  <meta name="description" content="コンポーネントリストの概要です" />
+  <title>人と仕事を知る | MICHIO SHOP（ミチオショップ）</title>
+  <meta name="description" content="ミチオショップの業務内容を掲載しています。" />
+  <meta name="keywords" content="仕事を知る、業務内容、MICHIO SHOP（ミチオショップ）">
   <!-- ogp -->
   <meta property="og:title" content="コンポーネント" />
   <meta property="og:type" content="website" />
@@ -21,8 +22,7 @@
   <meta name="twitter:title" content="コンポーネント" />
   <meta name="twitter:image" content="https://example.com/images/common/ogp.jpg" />
   <!-- icon -->
-  <link rel="icon" href="./assets/images/common/icon-16x16.png" sizes="16x16" type="image/png" />
-  <link rel="apple-touch-icon" href="./assets/images/common/apple-touch-icon-152x152.png" />
+  <link rel="icon" href="./assets/images/common/michioshop.png" sizes="100x100" type="image/png" />
 
   <!-- googlefonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,11 +31,12 @@
 
 
   <!-- css -->
-  <link rel="stylesheet" href="./assets/css/style.css?ver=8135459498" />
+  <link rel="stylesheet" href="./assets/css/style.css?ver=20240131" />
 
 </head>
 
 <body>
+  <div id="top"></div>
   <header class="p-header l-header" id="js-header">
     <div class="p-header__inner l-inner">
       <div class="p-header__logo">
@@ -56,7 +57,7 @@
           <li class="p-header__list"><a href="special.html"><i>SPECIAL CONTENT</i></a></li>
           <li class="p-header__list"><a href="career.html"><i>CAREER</i></a></li>
           <li class="p-header__list"><a href="recruit.html"><i>RECRUIT</i></a></li>
-          <li class="p-header__entry"><a href="#">ENTRY</a></li>
+          <li class="p-header__entry"><a href="https://job.mynavi.jp/25/pc/search/corp214069/outline.html">ENTRY</a></li>
         </ul>
       </nav>
       <nav id="js-nav" class="p-header__nav_sp">
@@ -82,7 +83,7 @@
           </div>
           <p class="p-header__nav__copy"><small>COPYRIGHT &copy;  MICHIO SHOP CO.,LTD. ALL RIGHTS RESERVED.</small></p>
           <div class="p-header__nav__btn">
-            <a class="p-header__nav__link" href="">ENTRY</a>
+            <a class="p-header__nav__link" href="https://job.mynavi.jp/25/pc/search/corp214069/outline.html">ENTRY</a>
           </div>
         </div>
       </nav>
@@ -139,12 +140,6 @@
         </div>
       </div>
       <div class="p-works__scroll">
-        <!-- <picture class="p-works__img l-inner-sm">
-          <source srcset="./assets/images/works/work_img_01_sp.webp" media="(max-width: 768px)" type="image/webp">
-          <source srcset="./assets/images/works/work_img_01_sp.png" media="(max-width: 768px)" type="image/png">
-          <source srcset="./assets/images/works/work_img_01.webp" media="(min-width: 769px)" type="image/webp">
-          <img src="./assets/images/works/work_img_01.png" alt="">
-        </picture> -->
         <ul class="p-works__list">
           <li class="p-works__item">
             <div class="p-works__item__bg-l-1">
@@ -229,8 +224,9 @@
                   <img src="./assets/images/works/work_icon_04.png" alt="">
                 </picture>
                 <p class="p-works__item__title"><i>SUPPORT</i></p>
-                <p class="p-works__item__sub">問合せ対応<br>
-                  （電話・メール）</p>
+                <p class="p-works__item__sub">
+                  問合せ対応<br>
+                  <span class="p-works__item__sub__sm">（電話・メール）</span></p>
                 <p class="p-works__item__text">発送日の連絡や質問のやり取りなどを電話やメールで対応します。お礼メールやレビュー投稿の依頼をはじめ、メルマガの配信なども定期的に行っています。</p>
               </div>
             </div>
@@ -256,19 +252,19 @@
               <div class="c-breadcrumb">
                 <ul class="c-breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
                   <li class="c-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <a class="c-breadcrumb__link" href="crosstalk01.html" itemid="" itemscope itemtype="https://schema.org/Thing" itemprop="item">
+                    <a class="c-breadcrumb__link" href="#crosstalk01" itemid="" itemscope itemtype="https://schema.org/Thing" itemprop="item">
                       <span itemprop="name"><i>CROSSTALK 01</i></span>
                     </a>
                     <meta itemprop="position" content="1">
                   </li>
                   <li class="c-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                    <a class="c-breadcrumb__link" href="crosstalk02.html" itemid="" itemscope itemtype="https://schema.org/Thing" itemprop="item">
+                    <a class="c-breadcrumb__link" href="#crosstalk02" itemid="" itemscope itemtype="https://schema.org/Thing" itemprop="item">
                       <span itemprop="name"><i>CROSSTALK 02</i></span>
                     </a>
                     <meta itemprop="position" content="2" />
                   </li>
                   <li class="c-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                    <a class="c-breadcrumb__link" href="crosstalk03.html" itemid="" itemscope itemtype="https://schema.org/Thing" itemprop="item">
+                    <a class="c-breadcrumb__link" href="#crosstalk03" itemid="" itemscope itemtype="https://schema.org/Thing" itemprop="item">
                       <span itemprop="name"><i>CROSSTALK 03</i></span>
                     </a>
                     <meta itemprop="position" content="3" />
@@ -281,6 +277,7 @@
       </div>
       <div class="l-inner">
         <div class="p-human__wrap2">
+          <div id="crosstalk01"></div>
           <a class="p-human__link" href="crosstalk01.html">
             <picture class="p-human__img">
               <source srcset="./assets/images/works/work_img_02_sp.webp" media="(max-width: 768px)" type="image/webp">
@@ -301,6 +298,7 @@
               </span>
             </div>
           </a>
+          <div id="crosstalk02"></div>
           <a class="p-human__link" href="crosstalk02.html">
             <picture class="p-human__img">
               <source srcset="./assets/images/works/work_img_03_sp.webp" media="(max-width: 768px)" type="image/webp">
@@ -321,6 +319,7 @@
               </span>
             </div>
           </a>
+          <div id="crosstalk03"></div>
           <a class="p-human__link" href="crosstalk03.html">
             <picture class="p-human__img">
               <source srcset="./assets/images/works/work_img_04_sp.webp" media="(max-width: 768px)" type="image/webp">
@@ -349,17 +348,24 @@
         </div>
       </div>
     </section>
+    <a href="#top" id="page__top">
+      <span class="pagetop__arrow"></span>
+      <picture class="pagetop__img">
+        <source srcset="./assets/images/common/top_btn.webp" media="(min-width: 769px)" type="image/webp">
+        <img src="./assets/images/common/top_btn.png" alt="">
+      </picture>
+    </a>
   </main>
   <footer class="p-footer">
     <div class="p-footer__inner l-inner">
       <div class="p-footer__btn">
-        <a class="p-footer__btn__link" href="">ENTRY</a>
+        <a class="p-footer__btn__link" href="https://job.mynavi.jp/25/pc/search/corp214069/outline.html">ENTRY</a>
       </div>
       <nav class="p-footer__nav">
         <ul class="p-footer__lists">
           <li class="p-footer__list"><a href="company.html"><i>COMPANY</i><span class="p-footer__list-ja u-hidden-pc">会社情報</span></a></li>
           <li class="p-footer__list"><a href="human&works.html"><i>WORKS & HUMAN</i><span class="p-footer__list-ja u-hidden-pc">人と仕事を知る</span></a></li>
-          <li class="p-footer__list"><a href="special.html"><i>SPECIAL CONTENT</i><span class="p-footer__list-ja u-hidden-pc">しくじりリスト</span></a></li>
+          <li class="p-footer__list"><a href="special.html"><i>SPECIAL</i><span class="p-footer__list-ja u-hidden-pc">しくじりリスト</span></a></li>
           <li class="p-footer__list"><a href="career.html"><i>CAREER</i><span class="p-footer__list-ja u-hidden-pc">キャリアを知る</span></a></li>
           <li class="p-footer__list"><a href="recruit.html"><i>RECRUIT</i><span class="p-footer__list-ja u-hidden-pc">採用情報</span></a></li>
         </ul>
@@ -376,7 +382,7 @@
     </div>
   </footer>
   <!-- JavaScript -->
-  <script src="./assets/js/script.js?ver=8135459498"></script>
+  <script src="./assets/js/script.js?ver=20240131"></script>
 </body>
 
 </html>

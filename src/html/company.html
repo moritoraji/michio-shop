@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
   <!-- meta情報 -->
-  <title>会社概要</title>
-  <meta name="description" content="コンポーネントリストの概要です" />
+  <title>ミチオの歴史 | MICHIO SHOP（ミチオショップ）</title>
+  <meta name="description" content="ミチオショップの歴史を掲載しています。" />
+  <meta name="keywords" content="ミチオショップ歴史、MICHIO SHOP（ミチオショップ）">
   <!-- ogp -->
   <meta property="og:title" content="コンポーネント" />
   <meta property="og:type" content="website" />
@@ -21,8 +22,7 @@
   <meta name="twitter:title" content="コンポーネント" />
   <meta name="twitter:image" content="https://example.com/images/common/ogp.jpg" />
   <!-- icon -->
-  <link rel="icon" href="./assets/images/common/icon-16x16.png" sizes="16x16" type="image/png" />
-  <link rel="apple-touch-icon" href="./assets/images/common/apple-touch-icon-152x152.png" />
+  <link rel="icon" href="./assets/images/common/michioshop.png" sizes="100x100" type="image/png" />
 
   <!-- googlefonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,11 +31,13 @@
 
 
   <!-- css -->
-  <link rel="stylesheet" href="./assets/css/style.css?ver=8135459498" />
+  <link rel="stylesheet" href="./assets/css/style.css?ver=20240131" />
+  <link rel="stylesheet" href="./assets/css/lightbox.min.css">
 
 </head>
 
 <body>
+  <div id="top"></div>
   <header class="p-header l-header" id="js-header">
     <div class="p-header__inner l-inner">
       <div class="p-header__logo">
@@ -56,7 +58,7 @@
           <li class="p-header__list"><a href="special.html"><i>SPECIAL CONTENT</i></a></li>
           <li class="p-header__list"><a href="career.html"><i>CAREER</i></a></li>
           <li class="p-header__list"><a href="recruit.html"><i>RECRUIT</i></a></li>
-          <li class="p-header__entry"><a href="#">ENTRY</a></li>
+          <li class="p-header__entry"><a href="https://job.mynavi.jp/25/pc/search/corp214069/outline.html">ENTRY</a></li>
         </ul>
       </nav>
       <nav id="js-nav" class="p-header__nav_sp">
@@ -82,7 +84,7 @@
           </div>
           <p class="p-header__nav__copy"><small>COPYRIGHT &copy;  MICHIO SHOP CO.,LTD. ALL RIGHTS RESERVED.</small></p>
           <div class="p-header__nav__btn">
-            <a class="p-header__nav__link" href="">ENTRY</a>
+            <a class="p-header__nav__link" href="https://job.mynavi.jp/25/pc/search/corp214069/outline.html">ENTRY</a>
           </div>
         </div>
       </nav>
@@ -96,23 +98,27 @@
     </div>
   </header>
   <main class="p-main">
+
     <section class="p-comapny__slider">
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./assets/images/slide/slide_01.jpg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/images/slide/slide_02.jpg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/images/slide/slide_03.jpg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/images/slide/slide_04.jpg" alt="" />
+      <div class="l-inner">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/images/slide/slide_01.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/slide/slide_02.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/slide/slide_03.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/slide/slide_04.jpg" alt="" />
+            </div>
           </div>
         </div>
       </div>
+
     </section>
 
     <section class="p-comapny__box">
@@ -165,6 +171,7 @@
                       </div>
                     </div>
                     <div class="p-comapny__item__wrap2">
+                      <a class="p-comapny__item__lightbox" href="./assets/images/company/company_history_01.jpg" data-lightbox="image-set"><img class="p-comapny__item__lightbox__img" src="./assets/images/company/company_icon.svg" alt=""></a>
                       <picture>
                         <source class="p-comapny__item__img" srcset="./assets/images/company/company_history_01.webp" type="image/webp">
                         <img class="p-comapny__item__img" src="./assets/images/company/company_history_01.jpg" decoding="async" alt="" />
@@ -199,6 +206,7 @@
                       </div>
                     </div>
                     <div class="p-comapny__item__wrap2">
+                      <a class="p-comapny__item__lightbox" href="./assets/images/company/company_history_02.jpg" data-lightbox="image-set"><img class="p-comapny__item__lightbox__img" src="./assets/images/company/company_icon.svg" alt=""></a>
                       <picture>
                         <source class="p-comapny__item__img"  srcset="./assets/images/company/company_history_02.webp" type="image/webp">
                         <img class="p-comapny__item__img" src="./assets/images/company/company_history_02.jpg" decoding="async" alt="" />
@@ -233,8 +241,9 @@
                       </div>
                     </div>
                     <div class="p-comapny__item__wrap2">
+                      <a class="p-comapny__item__lightbox" href="./assets/images/company/company_history_03.jpg" data-lightbox="image-set"><img class="p-comapny__item__lightbox__img" src="./assets/images/company/company_icon.svg" alt=""></a>
                       <picture>
-                        <source class="p-comapny__item__img"  srcset="./assets/images/company/company_history_03.webp" type="image/webp">
+                        <source class="p-comapny__item__img" srcset="./assets/images/company/company_history_03.webp" type="image/webp">
                         <img class="p-comapny__item__img" src="./assets/images/company/company_history_03.jpg" decoding="async" alt="" />
                       </picture>
                     </div>
@@ -262,11 +271,11 @@
                 </ul>
               </div>
               <h2 class="c-title">ミチオ<span class="c-title-red">カルチャー</span></h2>
-              <p class="p-comapny__box__text">仕事だからとドライに割り切るのではなく、<br class="u-hidden-pc">毎日通う職場だからこそ「楽しみ」を感じて欲しい。<br>
+              <p class="p-comapny__box__text">仕事だからとドライに割り切るのではなく、<br class="u-hidden-pc">毎日通う職場だからこそ「楽しみ」を感じて欲しい。<br class="u-hidden-sp">
                 そんな想いから、ちょっと他にはない「カルチャー」が根づいています。</p>
               <div class="p-comapny__history__inner">
                 <ul class="p-comapny__history__list">
-                  <li class="p-comapny__history__item">
+                  <li class="p-comapny__history__item p-comapny__history__num01">
                     <div class="p-comapny__history__content">
                       <div class="p-comapny__history__head">
                         <h3 class="c-heading text-red">
@@ -288,7 +297,7 @@
                       </picture>
                     </div>
                   </li>
-                  <li class="p-comapny__history__item">
+                  <li class="p-comapny__history__item p-comapny__history__num02">
                     <div class="p-comapny__history__content">
                       <div class="p-comapny__history__head">
                         <h3 class="c-heading text-red">
@@ -310,7 +319,7 @@
                       </picture>
                     </div>
                   </li>
-                  <li class="p-comapny__history__item">
+                  <li class="p-comapny__history__item p-comapny__history__num03">
                     <div class="p-comapny__history__content">
                       <div class="p-comapny__history__head">
                         <h3 class="c-heading text-red">
@@ -339,17 +348,24 @@
         </div>
       </div>
     </section>
+    <a href="#top" id="page__top">
+      <span class="pagetop__arrow"></span>
+      <picture class="pagetop__img">
+        <source srcset="./assets/images/common/top_btn.webp" media="(min-width: 769px)" type="image/webp">
+        <img src="./assets/images/common/top_btn.png" alt="">
+      </picture>
+    </a>
   </main>
   <footer class="p-footer">
     <div class="p-footer__inner l-inner">
       <div class="p-footer__btn">
-        <a class="p-footer__btn__link" href="">ENTRY</a>
+        <a class="p-footer__btn__link" href="https://job.mynavi.jp/25/pc/search/corp214069/outline.html">ENTRY</a>
       </div>
       <nav class="p-footer__nav">
         <ul class="p-footer__lists">
           <li class="p-footer__list"><a href="company.html"><i>COMPANY</i><span class="p-footer__list-ja u-hidden-pc">会社情報</span></a></li>
           <li class="p-footer__list"><a href="human&works.html"><i>WORKS & HUMAN</i><span class="p-footer__list-ja u-hidden-pc">人と仕事を知る</span></a></li>
-          <li class="p-footer__list"><a href="special.html"><i>SPECIAL CONTENT</i><span class="p-footer__list-ja u-hidden-pc">しくじりリスト</span></a></li>
+          <li class="p-footer__list"><a href="special.html"><i>SPECIAL</i><span class="p-footer__list-ja u-hidden-pc">しくじりリスト</span></a></li>
           <li class="p-footer__list"><a href="career.html"><i>CAREER</i><span class="p-footer__list-ja u-hidden-pc">キャリアを知る</span></a></li>
           <li class="p-footer__list"><a href="recruit.html"><i>RECRUIT</i><span class="p-footer__list-ja u-hidden-pc">採用情報</span></a></li>
         </ul>
@@ -366,7 +382,8 @@
     </div>
   </footer>
   <!-- JavaScript -->
-  <script src="./assets/js/script.js?ver=8135459498"></script>
+  <script src="./assets/js/lightbox-plus-jquery.min.js"></script>
+  <script src="./assets/js/script.js?ver=20240131"></script>
   <script>
     function tab(contentId) { // 表示初期化
       document.querySelectorAll(".p-comapny__box__table").forEach(el => el.setAttribute('aria-hidden', 'true'));

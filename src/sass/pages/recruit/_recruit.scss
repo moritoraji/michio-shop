@@ -10,9 +10,4 @@
 
 .p-recruit__table2 {
   margin-top: get-pc-vw(45);
-  padding-bottom: get-pc-vw(120);
-
-  @include mq(md) {
-    padding-bottom:  get-sp-vw(105);
-  }
 }

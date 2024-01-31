@@ -3,6 +3,8 @@
 .p-top__message {
   position: relative;
   padding-bottom: 0;
+  background-color: #EDEDED;
+  bottom: get-pc-vw(-10);
 
   @include mq(md) {
       padding-bottom: get-pc-vw(18);
@@ -40,6 +42,7 @@
 }
 
 .p-top__message__sub {
+  color: $base-color;
   @include font(40, 65, 0, 900);
   padding-top: get-pc-vw(18);
 
