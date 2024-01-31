@@ -108,7 +108,8 @@
 
   @include mq(md) {
     width: get-sp-vw(15);
-    height: get-sp-vw(870);
+    // height: get-sp-vw(870);
+    height: 100%;
   }
 }
 
@@ -127,7 +128,11 @@
 
   @include mq(md) {
     height: auto;
-    margin-bottom:  get-sp-vw(33);
+    margin-bottom: get-sp-vw(33);
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 }
 

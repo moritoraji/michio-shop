@@ -75,9 +75,17 @@
   &:last-child {
     .p-table2__body__th {
       border-bottom: solid 1px $black;
+
+      @include mq(md) {
+        border-bottom: solid 0;
+      }
     }
     .p-table2__body__td {
       border-bottom: solid 1px #C9CACA;
+
+      @include mq(md) {
+        border-bottom: solid 0;
+      }
     }
   }
 
@@ -85,7 +93,11 @@
     flex-direction: column;
     align-items: flex-start;
     border-top: solid get-sp-vw(1) $black;
-    border-bottom: solid solid get-sp-vw(1) $black;
+    // border-bottom: solid get-sp-vw(1) $black;
+
+    &:last-of-type {
+        border-bottom: solid get-sp-vw(1) $black;
+    }
   }
 }
 
